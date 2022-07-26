@@ -1,0 +1,69 @@
+@media only screen
+and (max-width : 700px){
+  .UserInfo{
+
+    &:before{
+      height: 60px;
+      width: 60px;
+      top: 5px;
+    }
+
+    &__avatar{
+      height: 50px;
+      width: 50px;
+      min-width: 50px;
+
+      &Pipe{
+        display: none;
+      }
+    }
+
+    &__login{
+      font-size: 2rem;
+      height: 100%;
+    }
+
+    &__details{
+      display: none;
+    }
+
+  }
+}
+
+@media only screen
+and (max-width : 600px){
+  .UserInfo{
+    padding-left: 20px;
+    width: calc(100% - 20px);
+
+    &:before{
+      left: 20px;
+    }
+  }
+}
+
+@media only screen
+and (max-width : 550px){
+  .UserInfo{
+
+    &:before{
+      height: 50px;
+      width: 50px;
+      top: 10px;
+    }
+
+    &__rightColumn{
+      margin-left: 5px;
+    }
+
+    &__avatar{
+      height: 42px;
+      width: 42px;
+      min-width: 42px;
+    }
+
+    &__login{
+      font-size: 1.6rem;
+    }
+  }
+}

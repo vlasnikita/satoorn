@@ -1,0 +1,391 @@
+@keyframes shine {
+  0% {
+    right: 100%;
+  }
+
+  100% {
+    right: -100%;
+  }
+}
+
+@keyframes dot {
+  50% {
+    transform: translateX(75px);
+    filter: blur(1px);
+  }
+}
+@keyframes dots {
+  50% {transform: translateX(-25px);}
+}
+
+@keyframes dotSpan {
+  50% {filter: blur(1px);}
+}
+
+// proportions
+$headerHeight: 60px;
+$sidebarWidth: 74px;
+
+// timers
+$scrollAwayNodesTiming: .2s;
+$fadeAwayNotCreateChallengeNodesTimeout: .75s;
+
+// colors
+$loadingBg: #f2f2f2;
+$mainYellow: #FEE233;
+$mainPurple: #734ce3;
+
+// shadows, borders
+$activeEditBoxShadow: 0px 0px 5px 2px #fee233;
+$filtersInsetBoxShadow: inset 0 0 5px 1px rgba(50, 50, 250, .15);
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+  background: #222;
+}
+
+p, h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+.Text_yellow {
+  color: $mainYellow;
+}
+
+.loader{
+  position: relative !important;
+  overflow: hidden !important;
+  background: $loadingBg !important;
+
+  &__pending {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 100px;
+    position: relative;
+
+    &_absolute{
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &Dot {
+      filter: blur(0px);
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      left: 12px;
+      background: #fff;
+      border-radius: 50%;
+      transform: translateX(0);
+      animation: dot 2.8s infinite;
+      box-shadow: 0 0 10px 1px hsla(0,0%,7%,.1);
+    }
+
+    &Dots {
+      transform: translateX(0);
+      margin-left: 24px;
+      animation: dots 2.8s infinite;
+
+      span {
+        animation: dotSpan 2.8s infinite;
+        filter: blur(0px);
+        display: block;
+        float: left;
+        width: 12px;
+        height: 12px;
+        margin-left: 12px;
+        background: #fff;
+        border-radius: 50%;
+        box-shadow: 0 0 10px 1px hsla(0,0%,7%,.1);
+      }
+    }
+  }
+
+  &__finish{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    min-height: 55px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    &_absolute{
+      margin-top: auto;
+    }
+
+    &:after{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 10px;
+      background: #fff;
+      bottom: 0;
+      box-shadow: 0 0 10px 1px hsla(0,0%,7%,.125);
+    }
+
+    &Before{
+      margin: auto;
+      height: 80px;
+      width: 100%;
+      min-height: 80px;
+    }
+
+    &Circle{
+      z-index: 1;
+      background: #fff;
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      box-shadow: 0 0 10px 1px hsla(0,0%,7%,.125);
+    }
+
+    img{
+      z-index: 2;
+      height: 32px;
+      width: 32px;
+    }
+  }
+}
+.loader:after {
+  content: "";
+  position: absolute !important;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left, $loadingBg, #ededed, $loadingBg) no-repeat 0 0;
+  background-size: 100% 100%;
+  transform: skewX(20deg);
+  transition: 1s linear;
+  animation-name: shine;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  border: none;
+}
+
+.Container{
+  width: 100%;
+
+  &__body{
+    padding: 0 30px;
+    width: calc(100% - 60px);
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
+
+.Button {
+  height: 36px;
+  border-radius: 34px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $mainPurple;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  background: none;
+
+  &_greytext {
+    color: #888;
+  }
+
+  &_yellowtext {
+    font-weight: normal;
+    box-shadow: 0 2px 1px 1px rgba(163, 146, 42, .15);
+    background-color: transparent;
+    border: 1px solid $mainYellow;
+    color: $mainYellow;
+    width: 100px;
+
+    &:hover{
+      background: $mainYellow;
+      color: #111;
+    }
+  }
+
+  &_purple {
+    background: $mainPurple;
+    width: 100px;
+    color: #fff;
+    box-shadow: 0px 2px 1px 1px rgba(115, 76, 227, .15);
+
+    &:hover{
+      background: #673dde;
+    }
+  }
+
+  &_wide {
+    width: 160px;
+  }
+
+  &_yellow{
+    background: $mainYellow;
+    color: #222;
+  }
+
+  &_white{
+    background: none;
+    box-shadow: 0 1px 5px 0 rgba(60, 60, 60, 0.035);
+  }
+}
+%buttonShadow {
+  position: absolute;
+  content: '';
+  transition: all .5s;
+  background-color: #7109c2;
+}
+
+.Input{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 40px;
+  
+  &__label{
+    font-size: 1.2rem;
+    color: #222;
+    margin-bottom: 4px;
+  }
+  
+  &__input {
+    position: relative;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+    width: calc(100% - 20px);
+    font-size: 1.6rem;
+    color: #222;
+    outline: none;
+    transition: .5s;
+  
+    &Container{
+      width: 46%;
+      display: flex;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+  
+      border: 1px solid #ddd;
+      flex-direction: row;
+      height: 44px;
+      border-radius: 4px;
+      background: rgba(238,238,238,.25);
+    }
+  
+    &_payment{
+      height: 36px;
+      border: none;
+      background: none;
+      outline: none;
+      font-size: 2.2rem;
+      font-weight: bold;
+      text-align: center;
+      width: 49%;
+      color: #222;
+    }
+  
+    &_errorMessage{
+      display: none;
+      height: 20px;
+      background: rgba(180,64,64,.5);
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: auto;
+      border: 1px solid #b44040;
+      border-top: none;
+      padding: 0 5px;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.9rem;
+      color: #222;
+      font-weight: bold;
+    }
+  
+    &_error{
+      border-color: #b44040 !important;
+      border-bottom-left-radius: 0 !important;
+  
+      &Message{
+        display: flex;
+      }
+    }
+  
+    &_template {
+      background: #333;
+  
+      &_clicked{
+        background: none;
+      }
+    }
+  }
+}
+
+.Island {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 16px 20px;
+  width: calc(100% - 40px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+@import 'components/About/style';
+@import 'components/Alert/style';
+@import 'components/Challenge/style';
+@import 'components/ChallengePage/style';
+@import 'components/CreateChallenge/style';
+@import 'components/FiltersBar/style';
+@import 'components/Header/style';
+@import 'components/Help/style';
+@import 'components/HowItWorks/style';
+@import 'components/Layout/style';
+@import 'components/Level/style';
+@import 'components/Main/style';
+@import 'components/NotFound/style';
+@import 'components/OrdersFeed/style';
+@import 'components/Popup/style';
+@import 'components/StreamersFeed/style';
+@import 'components/TransactionsFeed/style';
+@import 'components/Templates/style';
+@import 'components/User/style';
+@import 'components/Error/style';
+@import 'components/UserInfo/style';
+@import 'components/Widgets/style';
+@import 'components/StreamerContacts/style';

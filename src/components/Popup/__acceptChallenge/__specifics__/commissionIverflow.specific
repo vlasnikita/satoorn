@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should renders correctly when received COMMISSION_OVERFLOW code 1`] = `
+<div
+  className="PopupChallengeAccept"
+>
+  <div
+    className="PopupChallengeAccept__row"
+  >
+    <p
+      className="PopupChallengeAccept__text"
+    >
+      Выберите способ выплаты
+    </p>
+    <div
+      className="PopupChallengeAccept__types"
+    >
+      <p
+        className="PopupChallengeAccept__type PopupChallengeAccept__type_active"
+        key="0"
+        onClick={[Function]}
+      >
+        Банковская карта
+      </p>
+      <p
+        className="PopupChallengeAccept__type false"
+        key="1"
+        onClick={[Function]}
+      >
+        QIWI-кошелёк
+      </p>
+    </div>
+    <div
+      className="PopupChallengeAccept__row"
+    >
+      <p
+        className="PopupChallengeAccept__text"
+      >
+        Минимальная комиссия при этом способе выплаты: 
+        40
+        ₽
+      </p>
+    </div>
+  </div>
+  <div
+    className="PopupChallengeAccept__row"
+  >
+    <div>
+      <p
+        className="PopupChallengeAccept__text"
+      >
+        К сожалению, комиссия при данном способе выплате превышает доступную для выплаты сумму :(
+      </p>
+      <p
+        className="PopupChallengeAccept__text"
+      >
+        Поробуйте другой способ выплаты или соберите больше донатов на этот челлендж.
+      </p>
+    </div>
+  </div>
+  <button
+    className="Button Button_purple Popup__submit"
+    disabled={true}
+    onClick={[Function]}
+  >
+    Принять челлендж
+  </button>
+</div>
+`;

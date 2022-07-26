@@ -1,0 +1,145 @@
+@media only screen
+and (max-width : 1300px){
+    #Sidebar__logo_text{
+        display: none;
+    }
+}
+
+@media only screen
+and (max-width : 1000px){
+    .Character {
+        .Level {
+            padding: 0 9px;
+            min-width: 85px;
+
+            &__title {
+                display: none;
+            }
+
+            &__block{
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+}
+
+@media only screen
+and (max-width : 760px){
+    .Header__logo{
+        display: none;
+    }
+}
+
+@media only screen
+and (max-width : 674px){
+    .Character__bell{
+        display: none;
+    }
+
+    .Character__avatarContainer{
+        margin-right: 10px;
+    }
+
+    .Sidebar{
+        z-index: 9999;
+        height: $headerHeight;
+        pointer-events: none;
+        position: absolute;
+        bottom: 0;
+        top: unset;
+        width: 100vw;
+        clip-path: none;
+
+        &__menu{
+            pointer-events: all;
+            justify-content: space-around;
+            flex-direction: row;
+            position: absolute;
+            width: 100%;
+        }
+
+        &__item {
+            display: none;
+            width: 50px;
+            height: 50px;
+            margin: 0;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+
+            &_active .Sidebar__text{
+                opacity: 1;
+                color: #111;
+            }
+        }
+
+        &__footer{
+            display: none;
+        }
+
+        #Sidebar__item_challenges, #Sidebar__item_streamers, #Sidebar__item_mypage, #Sidebar__item_howitworks, #Sidebar__item_help{
+            display: flex;
+        }
+
+        .Sidebar__icon{
+            &Container {
+                width: 30px;
+                min-width: 30px;
+                height: 30px;
+                min-height: 30px;
+                background: none;
+                border-right: 0;
+            }
+        }
+
+        .Sidebar__text{
+            height: 16px;
+            line-height: 16px;
+            color: #999;
+            font-size: .9rem;
+            opacity: 1;
+        }
+    }
+}
+
+@media only screen
+and (max-width : 500px){
+    .Character {
+        .Level {
+            height: 38px;
+            padding: 0 3px;
+            min-width: 62px;
+
+            &__title {
+                display: none;
+            }
+
+            &__block{
+                width: 14px;
+                height: 14px;
+            }
+
+            &__icon{
+                width: 18px;
+            }
+        }
+    }
+}
+
+@media only screen
+and (max-width : 380px){
+    .Character__avatarContainer img{
+        width: 28px;
+    }
+
+    .Character__dropdown{
+        width: 36px;
+        padding-top: 58px;
+
+        &LoginContainer{
+            top: 34px;
+            height: 18px;
+        }
+    }
+}

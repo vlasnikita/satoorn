@@ -1,0 +1,25 @@
+.OrdersFeed {
+    height: calc(100% - 50px);
+    overflow-y: scroll;
+    width: 100%;
+    position: relative;
+    padding-top: $headerHeight;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    &__body{
+        height: auto;
+        width: 100%;
+        max-width: 870px; // 3 колонки челленджей в фиде
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        position: relative;
+    }
+}
+
+@import "/media";

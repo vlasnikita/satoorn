@@ -1,0 +1,151 @@
+.FiltersBar{
+    z-index: 1102;
+    position: absolute;
+    height: $headerHeight;
+    top: 0;
+    transition: $scrollAwayNodesTiming;
+    pointer-events: none;
+
+    &__body{
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+
+        &_toggled{
+            .FiltersBar__search{
+                display: none;
+            }
+        }
+
+        > * {
+            pointer-events: all;
+        }
+    }
+
+    &__block{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 15px;
+        height: 36px;
+        background: #e6e6f0;
+        border-radius: 6px;
+        width: auto;
+        box-shadow: $filtersInsetBoxShadow;
+
+        &_toggler{
+            display: none;
+            padding: 0;
+            margin: 0;
+
+            &_search{
+                margin-left: 0 !important;
+            }
+        }
+
+        &_bars{
+            border: 1px solid #ddd;
+        }
+    }
+
+    &__item {
+        font-size: 1.4rem;
+        color: #999;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 15px;
+        margin: 0 3px;
+        cursor: pointer;
+        border-radius: 4px;
+
+        &:hover{
+            color: $mainPurple;
+        }
+
+        &_active{
+            background: #fff;
+            color: $mainPurple;
+
+            &:hover{ color: $mainPurple; }
+        }
+    }
+
+    &__search{
+        margin-left: 35px;
+        height: 36px;
+        background: #e6e6f0;
+        border-radius: 6px;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border: 1px solid #ddd;
+        box-shadow: $filtersInsetBoxShadow;
+
+        &Input{
+            width: 240px;
+            outline: none;
+            border: none;
+            font-size: 1.4rem;
+            color: #222;
+            height: 100%;
+            padding: 0 15px;
+            background: transparent;
+        }
+
+        &Button{
+            background: #fff;
+            height: 30px;
+            width: 30px;
+            min-width: 30px;
+            cursor: pointer;
+            outline: none;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin: 0 3px;
+            border: none;
+        }
+    }
+}
+
+.FiltersBar__input{
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 0 10px;
+    padding-bottom: 3px;
+    font-size: 1.4rem;
+    transition: .2s;
+    background: #222;
+    color: #eee;
+    height: calc(100% - 3px);
+}
+
+.FiltersBar__input:focus{
+    padding-left: 7px;
+    background: #333333;
+}
+
+.FiltersBar__go {
+    background: $mainYellow;
+    border: none;
+    height: 26px;
+    width: 26px;
+    min-width: 26px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1px;
+}
+
+@import '/media';

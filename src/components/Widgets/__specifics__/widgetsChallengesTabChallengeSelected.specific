@@ -1,0 +1,530 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Widgets component: 'Challenges' tab selected with already choosened challenge for widget 1`] = `
+<BrowserRouter
+  keyLength={0}
+>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <Provider
+      store={
+        Object {
+          "clearActions": [Function],
+          "dispatch": [Function],
+          "getActions": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+        }
+      }
+    >
+      <Connect(Widgets)>
+        <Widgets
+          activeStreamer={
+            Object {
+              "activeStreamer": Object {
+                "authenticationSource": "twitch",
+                "bio": null,
+                "challengeCount": 0,
+                "contacts": Array [],
+                "email": null,
+                "externalId": "204865822",
+                "externalPhotoLink": "https://static-cdn.jtvnw.net/user-default-pictures-uv/75305d54-c7cc-40d1-bb9c-91fbe85943c7-profile_image-300x300.png",
+                "externalProfileLink": null,
+                "followerCount": 0,
+                "id": "5f108c57399c8300013dad42",
+                "login": "vlasnikita",
+                "streamer": false,
+                "viewerCount": 0,
+                "walletAmount": 0,
+              },
+              "loaded": false,
+              "loading": false,
+            }
+          }
+          handleResetWidgetChallenge={[Function]}
+          handleSetActiveStreamerClientside={[Function]}
+          profile={
+            Object {
+              "authenticationSource": "twitch",
+              "bio": null,
+              "challengeCount": 0,
+              "contacts": Array [],
+              "email": null,
+              "externalId": "204865822",
+              "externalPhotoLink": "https://static-cdn.jtvnw.net/user-default-pictures-uv/75305d54-c7cc-40d1-bb9c-91fbe85943c7-profile_image-300x300.png",
+              "externalProfileLink": null,
+              "followerCount": 0,
+              "id": "5f108c57399c8300013dad42",
+              "login": "vlasnikita",
+              "streamer": false,
+              "viewerCount": 0,
+              "walletAmount": 0,
+            }
+          }
+          widgetChallenge={
+            Object {
+              "authorImageLink": "https://static-cdn.jtvnw.net/user-default-pictures-uv/dbdc9198-def8-11e9-8681-784f43822e80-profile_image-300x300.png",
+              "authorLogin": "akareinaka",
+              "authorName": "akareinaka",
+              "commissionAmount": 50,
+              "description": "Some default description Some default description Some default description Some default description Some default description Some default description Some default description Some default description Some default description Some default description ",
+              "donatedPersonCount": 10,
+              "donationAmount": 78,
+              "donators": Object {
+                "akareinaaka": Object {
+                  "amount": 500,
+                  "avatarLink": "https://static-cdn.jtvnw.net/user-default-pictures-uv/dbdc9198-def8-11e9-8681-784f43822e80-profile_image-300x300.png",
+                  "login": "akareinaka",
+                },
+              },
+              "id": "1",
+              "imageId": "overwatch_stub_id",
+              "remainedDaysCount": 6,
+              "startedAt": "14-07-2020 21:00 MSK",
+              "state": "CREATED",
+              "streamerLogin": "user_1",
+              "streamerMessage": null,
+              "streamerPhotoLink": "https://images-cdn.9gag.com/photo/anbZVN0_700b.jpg",
+              "title": "some title",
+              "viewCount": 200,
+            }
+          }
+        >
+          <div
+            className="Widgets"
+          >
+            <Connect(FiltersBar)
+              activeTab="CHALLENGE"
+              handleTabClick={[Function]}
+              isWidgets={true}
+            >
+              <FiltersBar
+                activeStreamer={
+                  Object {
+                    "authenticationSource": "twitch",
+                    "bio": null,
+                    "challengeCount": 0,
+                    "contacts": Array [],
+                    "email": null,
+                    "externalId": "204865822",
+                    "externalPhotoLink": "https://static-cdn.jtvnw.net/user-default-pictures-uv/75305d54-c7cc-40d1-bb9c-91fbe85943c7-profile_image-300x300.png",
+                    "externalProfileLink": null,
+                    "followerCount": 0,
+                    "id": "5f108c57399c8300013dad42",
+                    "login": "vlasnikita",
+                    "streamer": false,
+                    "viewerCount": 0,
+                    "walletAmount": 0,
+                  }
+                }
+                activeTab="CHALLENGE"
+                handleGetStreamers={[Function]}
+                handleResetFilters={[Function]}
+                handleSetChallengesByUserIdFilter={[Function]}
+                handleSetChallengesByUserIdSearchTerm={[Function]}
+                handleSetChallengesFilter={[Function]}
+                handleSetChallengesSearchTerm={[Function]}
+                handleSetStreamersSearchTerm={[Function]}
+                handleTabClick={[Function]}
+                isWidgets={true}
+                profile={
+                  Object {
+                    "authenticationSource": "twitch",
+                    "bio": null,
+                    "challengeCount": 0,
+                    "contacts": Array [],
+                    "email": null,
+                    "externalId": "204865822",
+                    "externalPhotoLink": "https://static-cdn.jtvnw.net/user-default-pictures-uv/75305d54-c7cc-40d1-bb9c-91fbe85943c7-profile_image-300x300.png",
+                    "externalProfileLink": null,
+                    "followerCount": 0,
+                    "id": "5f108c57399c8300013dad42",
+                    "login": "vlasnikita",
+                    "streamer": false,
+                    "viewerCount": 0,
+                    "walletAmount": 0,
+                  }
+                }
+              >
+                <div
+                  className="FiltersBar"
+                >
+                  <WidgetsBar
+                    activeStreamer={
+                      Object {
+                        "authenticationSource": "twitch",
+                        "bio": null,
+                        "challengeCount": 0,
+                        "contacts": Array [],
+                        "email": null,
+                        "externalId": "204865822",
+                        "externalPhotoLink": "https://static-cdn.jtvnw.net/user-default-pictures-uv/75305d54-c7cc-40d1-bb9c-91fbe85943c7-profile_image-300x300.png",
+                        "externalProfileLink": null,
+                        "followerCount": 0,
+                        "id": "5f108c57399c8300013dad42",
+                        "login": "vlasnikita",
+                        "streamer": false,
+                        "viewerCount": 0,
+                        "walletAmount": 0,
+                      }
+                    }
+                    activeTab="CHALLENGE"
+                    handleGetStreamers={[Function]}
+                    handleResetFilters={[Function]}
+                    handleSetChallengesByUserIdFilter={[Function]}
+                    handleSetChallengesByUserIdSearchTerm={[Function]}
+                    handleSetChallengesFilter={[Function]}
+                    handleSetChallengesSearchTerm={[Function]}
+                    handleSetStreamersSearchTerm={[Function]}
+                    handleTabClick={[Function]}
+                    isWidgets={true}
+                    profile={
+                      Object {
+                        "authenticationSource": "twitch",
+                        "bio": null,
+                        "challengeCount": 0,
+                        "contacts": Array [],
+                        "email": null,
+                        "externalId": "204865822",
+                        "externalPhotoLink": "https://static-cdn.jtvnw.net/user-default-pictures-uv/75305d54-c7cc-40d1-bb9c-91fbe85943c7-profile_image-300x300.png",
+                        "externalProfileLink": null,
+                        "followerCount": 0,
+                        "id": "5f108c57399c8300013dad42",
+                        "login": "vlasnikita",
+                        "streamer": false,
+                        "viewerCount": 0,
+                        "walletAmount": 0,
+                      }
+                    }
+                  >
+                    <div
+                      className="FiltersBar__block"
+                    >
+                      <div
+                        className="FiltersBar__item FiltersBar__item_active"
+                        onClick={[Function]}
+                      >
+                        Активный челлендж
+                      </div>
+                      <div
+                        className="FiltersBar__item false"
+                        onClick={[Function]}
+                      >
+                        Оверлей-уведомления
+                      </div>
+                    </div>
+                  </WidgetsBar>
+                </div>
+              </FiltersBar>
+            </Connect(FiltersBar)>
+            <div
+              className="Widgets__body"
+            >
+              <div
+                className="Widgets__block"
+              >
+                <span
+                  className="Widgets__text Widgets__text_normal"
+                >
+                  Челлендж
+                </span>
+                <p
+                  className="Widgets__text"
+                >
+                  some title
+                </p>
+              </div>
+              <div
+                className="Widgets__block"
+              >
+                <span
+                  className="Widgets__text Widgets__text_normal"
+                >
+                  Формат
+                </span>
+                <div
+                  className="Widgets__format"
+                >
+                  <button
+                    className="Widgets__formatItem Widgets__formatItem_active"
+                    key="0"
+                    onClick={[Function]}
+                  >
+                    <p
+                      className="Widgets__formatLabel"
+                    >
+                      Карточка
+                    </p>
+                    <img
+                      src="widgets-card.svg"
+                    />
+                  </button>
+                  <button
+                    className="Widgets__formatItem "
+                    key="1"
+                    onClick={[Function]}
+                  >
+                    <p
+                      className="Widgets__formatLabel"
+                    >
+                      Строка
+                    </p>
+                    <img
+                      src="widgets-line.svg"
+                    />
+                  </button>
+                </div>
+              </div>
+              <div
+                className="Widgets__block"
+              >
+                <p
+                  className="Widgets__text Widgets__text_normal"
+                >
+                  Урл для OBS/Xsplit
+                </p>
+                <div
+                  className="Widgets__url"
+                >
+                  <button
+                    className="Button Button_purple Widgets__copyurl"
+                    onClick={[Function]}
+                  >
+                    Получить URL виджета
+                  </button>
+                </div>
+              </div>
+              <button
+                className="Button Button_grey Widgets__button Widgets__button_reset"
+                onClick={[Function]}
+              >
+                Назад
+              </button>
+            </div>
+            <div
+              className="Widgets__preview"
+            >
+              <div
+                className="Widgets__previewBody"
+              >
+                <img
+                  className="Widgets__previewPipe"
+                  src="templates-pipe.svg"
+                />
+                <h3
+                  className="Widgets__previewHeader"
+                >
+                  Предпросмотр
+                </h3>
+                <div
+                  className="Widgets__previewScreen"
+                  style={
+                    Object {
+                      "backgroundImage": "widgets-screensaver.png",
+                    }
+                  }
+                >
+                  <img
+                    className="Widgets__previewStreamer"
+                    src="widgets-streamer.png"
+                  />
+                  <Draggable
+                    allowAnyClick={false}
+                    axis="both"
+                    bounds=".Widgets__previewScreen"
+                    cancel={null}
+                    defaultClassName="react-draggable"
+                    defaultClassNameDragged="react-draggable-dragged"
+                    defaultClassNameDragging="react-draggable-dragging"
+                    defaultPosition={
+                      Object {
+                        "x": 0,
+                        "y": 0,
+                      }
+                    }
+                    disabled={false}
+                    enableUserSelectHack={true}
+                    grid={null}
+                    handle={null}
+                    offsetParent={null}
+                    onDrag={[Function]}
+                    onMouseDown={[Function]}
+                    onStart={[Function]}
+                    onStop={[Function]}
+                    position={null}
+                    scale={1}
+                    transform={null}
+                  >
+                    <DraggableCore
+                      allowAnyClick={false}
+                      cancel={null}
+                      disabled={false}
+                      enableUserSelectHack={true}
+                      grid={null}
+                      handle={null}
+                      offsetParent={null}
+                      onDrag={[Function]}
+                      onMouseDown={[Function]}
+                      onStart={[Function]}
+                      onStop={[Function]}
+                      scale={1}
+                      transform={null}
+                    >
+                      <div
+                        className="Widgets__previewChallenge
+                Widgets__previewChallenge_card
+                 react-draggable"
+                        onMouseDown={[Function]}
+                        onMouseUp={[Function]}
+                        onTouchEnd={[Function]}
+                        style={
+                          Object {
+                            "transform": "translate(0px,0px)",
+                          }
+                        }
+                        transform={null}
+                      >
+                        <ChallengeWidget
+                          authorImageLink="https://static-cdn.jtvnw.net/user-default-pictures-uv/dbdc9198-def8-11e9-8681-784f43822e80-profile_image-300x300.png"
+                          authorLogin="akareinaka"
+                          authorName="akareinaka"
+                          commissionAmount={50}
+                          description="Some default description Some default description Some default description Some default description Some default description Some default description Some default description Some default description Some default description Some default description "
+                          donatedPersonCount={10}
+                          donationAmount={78}
+                          donators={
+                            Object {
+                              "akareinaaka": Object {
+                                "amount": 500,
+                                "avatarLink": "https://static-cdn.jtvnw.net/user-default-pictures-uv/dbdc9198-def8-11e9-8681-784f43822e80-profile_image-300x300.png",
+                                "login": "akareinaka",
+                              },
+                            }
+                          }
+                          format="card"
+                          id="1"
+                          imageId="overwatch_stub_id"
+                          remainedDaysCount={6}
+                          startedAt="14-07-2020 21:00 MSK"
+                          state="CREATED"
+                          streamerLogin="user_1"
+                          streamerMessage={null}
+                          streamerPhotoLink="https://images-cdn.9gag.com/photo/anbZVN0_700b.jpg"
+                          title="some title"
+                          viewCount={200}
+                        >
+                          <div
+                            className="Challenge"
+                          >
+                            <div
+                              className="Challenge__header"
+                            >
+                              <div
+                                className="Challenge__streamer"
+                              >
+                                <img
+                                  className="Challenge__streamerAvatar"
+                                  src="logo_short.png"
+                                />
+                                <p
+                                  className="Challenge__streamerLogin"
+                                >
+                                  satoorn.ru/
+                                  <br />
+                                  user_1
+                                </p>
+                              </div>
+                            </div>
+                            <div
+                              className="Challenge__cover"
+                            >
+                              <div
+                                className="Challenge__price"
+                              >
+                                <p
+                                  className="Challenge__priceText Challenge__priceText_t5"
+                                >
+                                  78
+                                  <span
+                                    className="Challenge__priceText_currency"
+                                  >
+                                    ₽
+                                  </span>
+                                </p>
+                              </div>
+                            </div>
+                            <div
+                              className="Challenge__body"
+                            >
+                              <p
+                                className="Challenge__title"
+                              >
+                                some title
+                              </p>
+                            </div>
+                            <div
+                              className="Challenge__metaDonaters"
+                            >
+                              <img
+                                className="Challenge__metaIcon"
+                                src="heart.svg"
+                              />
+                              <div
+                                className="Challenge__metaText"
+                              >
+                                10
+                                 
+                                <span
+                                  style={
+                                    Object {
+                                      "fontWeight": "normal",
+                                    }
+                                  }
+                                >
+                                  задонатило
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </ChallengeWidget>
+                      </div>
+                    </DraggableCore>
+                  </Draggable>
+                </div>
+                <div
+                  className="Widgets__previewFakebuttons"
+                >
+                  <span />
+                  <span />
+                  <span />
+                </div>
+              </div>
+            </div>
+          </div>
+        </Widgets>
+      </Connect(Widgets)>
+    </Provider>
+  </Router>
+</BrowserRouter>
+`;

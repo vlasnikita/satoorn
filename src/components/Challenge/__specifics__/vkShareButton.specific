@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should renders correctly vk share button 1`] = `
+<a
+  className="Challenge__shareIcon"
+  href="https://vk.com/share.php?url=undefined/challenges
+/someChallengeId&text=Принял челлендж \\"someChallengeTitle\\" на satoorn.ru"
+  id="someId"
+  target="_blank"
+>
+  <img
+    alt="VK"
+    src="social-vk.svg"
+  />
+</a>
+`;

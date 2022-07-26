@@ -1,0 +1,115 @@
+.HowItWorks {
+    height: calc(100% - 100px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    padding-top: 50px;
+
+    &__pdf {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 50vh;
+        width: 50vh;
+        max-height: 50vw;
+        max-width: 50vw;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #272939;
+        cursor: pointer;
+        border-radius: 3px;
+        margin: 0 auto;
+        box-shadow: 0 1px 5px 0 rgba(60, 60, 60, 0.05);
+        text-decoration: none;
+
+        img {
+            height: 40%;
+            width: auto;
+        }
+
+        p{
+            margin-top: 10px;
+            font-size: 1.8rem;
+            color: #eee;
+            text-align: center;
+        }
+    }
+
+    &__slider {
+        position: relative;
+        background: #fff;
+        height: 90%;
+        width: auto;
+        box-shadow: 0 20px 30px 0px rgba(60, 60, 60, 0.1);
+        margin: auto;
+    }
+
+    &__slide {
+        height: 100%;
+    }
+
+    &__navigation {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__crumbs {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 55px;
+        height: 5px;
+        margin-bottom: 10px;
+    }
+
+    &__crumb {
+        height: 5px;
+        width: 5px;
+        background: #eee;
+        border-radius: 50%;
+
+        &_active {
+            background: $mainPurple;
+        }
+    }
+
+    &__buttons {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__next {
+        display: flex;
+        margin: 0 auto;
+        min-width: 120px;
+        width: auto;
+        padding: 0 15px;
+    }
+
+    &__prev {
+        position: absolute;
+        width: 32px;
+        right: 100%;
+
+        img {
+            height: 12px;
+        }
+    }
+}
+
+@import "/media";

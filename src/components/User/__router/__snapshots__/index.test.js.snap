@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render UserRouter correctly 1`] = `
+<div
+  className="User__body"
+>
+  <span
+    className="User__bodyBlur"
+  />
+  <Route
+    component={[Function]}
+    path="/some Login/transactions"
+  />
+  <Route
+    component={[Function]}
+    path="/some Login/challenges/:challengeId"
+  />
+  <Route
+    component={[Function]}
+    exact={true}
+    path="/some Login/challenges"
+  />
+  <Route
+    component={[Function]}
+    path="/some Login/widgets"
+  />
+  <Route
+    component={[Function]}
+    path="/some Login/create"
+  />
+  <Route
+    component={[Function]}
+    path="/some Login/channel"
+  />
+  <Route
+    component={[Function]}
+    exact={true}
+    path="/some Login"
+  />
+</div>
+`;

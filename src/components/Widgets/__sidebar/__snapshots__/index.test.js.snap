@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render WidgetsSidebar correctly 1`] = `
+<div
+  className="Widgets__sidebar"
+>
+  <div
+    className="Widgets__sidebarHeader"
+  >
+    <h1
+      className="Widgets__sidebarHeaderText"
+    >
+      ДОБАВИТЬ ВИДЖЕТ:
+    </h1>
+  </div>
+  <div
+    className="Widgets__sidebarList"
+  >
+    <button
+      className="Widgets__sidebarItem"
+      onClick={[Function]}
+    >
+      <div
+        className="Widgets__sidebarItemIconContainer"
+      >
+        <img
+          className="Widgets__sidebarItemIcon"
+          height={22}
+          src="widgets-type-alert.svg"
+        />
+      </div>
+      <p
+        className="Widgets__sidebarItemText"
+      >
+        Алерты и оповещения
+      </p>
+    </button>
+    <button
+      className="Widgets__sidebarItem"
+      onClick={[Function]}
+    >
+      <div
+        className="Widgets__sidebarItemIconContainer"
+      >
+        <img
+          className="Widgets__sidebarItemIcon"
+          height={18}
+          src="widgets-type-invite.svg"
+        />
+      </div>
+      <p
+        className="Widgets__sidebarItemText"
+      >
+        Инвайт-виджет
+      </p>
+    </button>
+    <button
+      className="Widgets__sidebarItem"
+      onClick={[Function]}
+    >
+      <div
+        className="Widgets__sidebarItemIconContainer"
+      >
+        <img
+          className="Widgets__sidebarItemIcon"
+          height={22}
+          src="widgets-type-challenge.svg"
+        />
+      </div>
+      <p
+        className="Widgets__sidebarItemText"
+      >
+        Челленджи
+      </p>
+    </button>
+  </div>
+</div>
+`;

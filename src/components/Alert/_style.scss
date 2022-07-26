@@ -1,0 +1,24 @@
+.Alert {
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background: rgba(207,74,42,.97);
+  transition: .5s;
+  opacity: 1;
+  width: calc(100vw - 70px);
+  top: 60px;
+  left: 70px;
+  z-index: 2000;
+
+  &_green{
+    background: #177017;
+  }
+
+  &__text{
+    color: #eee;
+    font-size: 1.8rem;
+  }
+}

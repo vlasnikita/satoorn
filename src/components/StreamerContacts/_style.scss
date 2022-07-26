@@ -1,0 +1,33 @@
+.StreamerContacts {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 40px;
+
+  &__contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    height: 60px;
+    border-radius: 8px;
+    padding: 0 16px;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 0 0 0 rgba(254, 226, 51, 0.8);
+  }
+
+  &__icon {
+    height: 30px;
+  }
+
+  &__platform {
+    margin-left: 6px;
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+}

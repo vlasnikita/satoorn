@@ -1,0 +1,666 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<BrowserRouter>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <Provider
+      store={
+        Object {
+          "clearActions": [Function],
+          "dispatch": [Function],
+          "getActions": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+        }
+      }
+    >
+      <withRouter(Connect(CreateChallenge))>
+        <Route>
+          <Connect(CreateChallenge)
+            history={
+              Object {
+                "action": "POP",
+                "block": [Function],
+                "createHref": [Function],
+                "go": [Function],
+                "goBack": [Function],
+                "goForward": [Function],
+                "length": 1,
+                "listen": [Function],
+                "location": Object {
+                  "hash": "",
+                  "pathname": "/",
+                  "search": "",
+                  "state": undefined,
+                },
+                "push": [Function],
+                "replace": [Function],
+              }
+            }
+            location={
+              Object {
+                "hash": "",
+                "pathname": "/",
+                "search": "",
+                "state": undefined,
+              }
+            }
+            match={
+              Object {
+                "isExact": true,
+                "params": Object {},
+                "path": "/",
+                "url": "/",
+              }
+            }
+          >
+            <CreateChallenge
+              activeStreamer={
+                Object {
+                  "authenticationSource": "twitch",
+                  "bio": null,
+                  "challengeCount": 0,
+                  "contacts": Array [],
+                  "email": null,
+                  "externalId": "204865822",
+                  "externalPhotoLink": "https://static-cdn.jtvnw.net/user-default-pictures-uv/75305d54-c7cc-40d1-bb9c-91fbe85943c7-profile_image-300x300.png",
+                  "externalProfileLink": null,
+                  "followerCount": 0,
+                  "id": "5f108c57399c8300013dad42",
+                  "login": "vlasnikita",
+                  "streamer": false,
+                  "viewerCount": 0,
+                  "walletAmount": 0,
+                }
+              }
+              activeTransaction={
+                Object {
+                  "id": null,
+                  "inProgress": false,
+                  "success": false,
+                }
+              }
+              challengeDraft={null}
+              configs={
+                Object {
+                  "minPaymentAmount": Object {
+                    "value": 30,
+                  },
+                  "settings": Object {
+                    "loaded": true,
+                    "loading": false,
+                    "value": Object {
+                      "challengeAcceptDetailsConfirmed": true,
+                      "challengeDonateDetailsConfirmed": true,
+                      "serviceOnboardingConfirmed": true,
+                    },
+                  },
+                }
+              }
+              handleAddActiveTransaction={[Function]}
+              handleOpenPopup={[Function]}
+              handleResetCreateChallengeDraft={[Function]}
+              handleSetActiveStreamer={[Function]}
+              handleSetRedirectToChallenge={[Function]}
+              handleShowAlert={[Function]}
+              history={
+                Object {
+                  "action": "POP",
+                  "block": [Function],
+                  "createHref": [Function],
+                  "go": [Function],
+                  "goBack": [Function],
+                  "goForward": [Function],
+                  "length": 1,
+                  "listen": [Function],
+                  "location": Object {
+                    "hash": "",
+                    "pathname": "/",
+                    "search": "",
+                    "state": undefined,
+                  },
+                  "push": [Function],
+                  "replace": [Function],
+                }
+              }
+              isActiveStreamerLoaded={false}
+              isActiveStreamerLoading={false}
+              location={
+                Object {
+                  "hash": "",
+                  "pathname": "/",
+                  "search": "",
+                  "state": undefined,
+                }
+              }
+              match={
+                Object {
+                  "isExact": true,
+                  "params": Object {},
+                  "path": "/",
+                  "url": "/",
+                }
+              }
+              profile={
+                Object {
+                  "authenticationSource": "twitch",
+                  "bio": null,
+                  "challengeCount": 0,
+                  "contacts": Array [],
+                  "email": null,
+                  "externalId": "204865822",
+                  "externalPhotoLink": "https://static-cdn.jtvnw.net/user-default-pictures-uv/75305d54-c7cc-40d1-bb9c-91fbe85943c7-profile_image-300x300.png",
+                  "externalProfileLink": null,
+                  "followerCount": 0,
+                  "id": "5f108c57399c8300013dad42",
+                  "login": "vlasnikita",
+                  "streamer": false,
+                  "viewerCount": 0,
+                  "walletAmount": 0,
+                }
+              }
+              redirectToChallenge={null}
+              updateSavedChallengeDescription={[Function]}
+              updateSavedChallengeTitle={[Function]}
+            >
+              <div
+                className="Container CreateChallenge"
+              >
+                <div
+                  className="Container__body Island CreateChallenge__body"
+                >
+                  <div
+                    className="CreateChallenge__row"
+                  >
+                    <span
+                      className="CreateChallenge__label"
+                    >
+                      Название
+                    </span>
+                    <input
+                      autoComplete="off"
+                      className="CreateChallenge__input false"
+                      id="title"
+                      name="title"
+                      onChange={[Function]}
+                      type="text"
+                    />
+                  </div>
+                  <div
+                    className="CreateChallenge__row CreateChallenge__row_description"
+                  >
+                    <span
+                      className="CreateChallenge__label"
+                    >
+                      Описание челленджа
+                    </span>
+                    <textarea
+                      className="CreateChallenge__input false"
+                      id="description"
+                      name="description"
+                      onChange={[Function]}
+                      rows="5"
+                      value=""
+                    />
+                  </div>
+                  <div
+                    className="CreateChallenge__row CreateChallenge__row_payment"
+                  >
+                    <span
+                      className="CreateChallenge__label"
+                    >
+                      Сумма
+                    </span>
+                    <div
+                      className="Challenge__actions false"
+                    >
+                      <div
+                        className="Challenge__inputContainer"
+                      >
+                        <input
+                          className="Challenge__input Challenge__input_payment"
+                          id="newBidAmount"
+                          name="newBidAmount"
+                          onBlur={[Function]}
+                          onChange={[Function]}
+                          onFocus={[Function]}
+                          type="text"
+                          value={30}
+                        />
+                        <span
+                          className="Challenge__inputCurrency Challenge__inputCurrency_2"
+                        >
+                          ₽
+                        </span>
+                      </div>
+                      <div
+                        className="Button Button_purple Challenge__button"
+                        id="CreateChallenge__button"
+                        onClick={[Function]}
+                      >
+                        Создать
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    className="Button Button_greytext CreateChallenge__button"
+                    onClick={[Function]}
+                  >
+                    Отменить
+                  </button>
+                </div>
+                <Connect(Templates)>
+                  <Templates
+                    handleSetCreateChallengeDescription={[Function]}
+                    handleSetCreateChallengeType={[Function]}
+                    templates={
+                      Array [
+                        Object {
+                          "description": "просмотр аниме/фильма/ютуба 🍿",
+                          "title": "просмотр аниме/фильма/ютуба 🍿",
+                        },
+                        Object {
+                          "description": "оценить паблик вк",
+                          "title": "оценить паблик вк",
+                        },
+                        Object {
+                          "description": "караоке 🎤",
+                          "title": "караоке 🎤",
+                        },
+                        Object {
+                          "description": "музыка на заказ",
+                          "title": "музыка на заказ",
+                        },
+                        Object {
+                          "description": "игра на заказ 🎮",
+                          "title": "игра на заказ 🎮",
+                        },
+                        Object {
+                          "description": "смайл-мод в чате",
+                          "title": "смайл-мод в чате",
+                        },
+                        Object {
+                          "description": "игровая лотерея 🎲",
+                          "title": "игровая лотерея 🎲",
+                        },
+                        Object {
+                          "description": "оценить инстаграм",
+                          "title": "оценить инстаграм",
+                        },
+                        Object {
+                          "description": "сыграть в мафию 🔫",
+                          "title": "сыграть в мафию 🔫",
+                        },
+                        Object {
+                          "description": "Fall Guys",
+                          "title": "Fall Guys",
+                        },
+                        Object {
+                          "description": "Among Us",
+                          "title": "Among Us",
+                        },
+                        Object {
+                          "description": "охота на ачивку 🎯",
+                          "title": "охота на ачивку 🎯",
+                        },
+                        Object {
+                          "description": "игровой марафон 🏃",
+                          "title": "игровой марафон 🏃",
+                        },
+                        Object {
+                          "description": "спидран",
+                          "title": "спидран",
+                        },
+                        Object {
+                          "description": "обучение игре 🧠",
+                          "title": "обучение игре 🧠",
+                        },
+                        Object {
+                          "description": "фуд-челлендж 🍕",
+                          "title": "фуд-челлендж 🍕",
+                        },
+                        Object {
+                          "description": "спеть/станцевать/нарисовать 🎨",
+                          "title": "спеть/станцевать/нарисовать 🎨",
+                        },
+                        Object {
+                          "description": "кулинарный стрим 🍳",
+                          "title": "кулинарный стрим 🍳",
+                        },
+                        Object {
+                          "description": "GeoGuessr",
+                          "title": "GeoGuessr",
+                        },
+                        Object {
+                          "description": "пройти онлайн-тесты",
+                          "title": "пройти онлайн-тесты",
+                        },
+                        Object {
+                          "description": "турнир с подписчиками 🏆",
+                          "title": "турнир с подписчиками 🏆",
+                        },
+                        Object {
+                          "description": "розыгрыши",
+                          "title": "розыгрыши",
+                        },
+                        Object {
+                          "description": "совместная игра со стримером 👯",
+                          "title": "совместная игра со стримером 👯",
+                        },
+                        Object {
+                          "description": "косплей",
+                          "title": "косплей",
+                        },
+                      ]
+                    }
+                  >
+                    <div
+                      className="Templates"
+                    >
+                      <h3
+                        className="Templates__header"
+                      >
+                        Рекомендации
+                      </h3>
+                      <div
+                        className="Templates__feed"
+                      >
+                        <div
+                          className="Templates__template"
+                          key="0"
+                          onClick={[Function]}
+                        >
+                          <p
+                            className="Templates__title"
+                          >
+                            просмотр аниме/фильма/ютуба 🍿
+                          </p>
+                        </div>
+                        <div
+                          className="Templates__template"
+                          key="1"
+                          onClick={[Function]}
+                        >
+                          <p
+                            className="Templates__title"
+                          >
+                            оценить паблик вк
+                          </p>
+                        </div>
+                        <div
+                          className="Templates__template"
+                          key="2"
+                          onClick={[Function]}
+                        >
+                          <p
+                            className="Templates__title"
+                          >
+                            караоке 🎤
+                          </p>
+                        </div>
+                        <div
+                          className="Templates__template"
+                          key="3"
+                          onClick={[Function]}
+                        >
+                          <p
+                            className="Templates__title"
+                          >
+                            музыка на заказ
+                          </p>
+                        </div>
+                        <div
+                          className="Templates__template"
+                          key="4"
+                          onClick={[Function]}
+                        >
+                          <p
+                            className="Templates__title"
+                          >
+                            игра на заказ 🎮
+                          </p>
+                        </div>
+                        <div
+                          className="Templates__template"
+                          key="5"
+                          onClick={[Function]}
+                        >
+                          <p
+                            className="Templates__title"
+                          >
+                            смайл-мод в чате
+                          </p>
+                        </div>
+                        <div
+                          className="Templates__template"
+                          key="6"
+                          onClick={[Function]}
+                        >
+                          <p
+                            className="Templates__title"
+                          >
+                            игровая лотерея 🎲
+                          </p>
+                        </div>
+                        <div
+                          className="Templates__template"
+                          key="7"
+                          onClick={[Function]}
+                        >
+                          <p
+                            className="Templates__title"
+                          >
+                            оценить инстаграм
+                          </p>
+                        </div>
+                        <div
+                          className="Templates__template"
+                          key="8"
+                          onClick={[Function]}
+                        >
+                          <p
+                            className="Templates__title"
+                          >
+                            сыграть в мафию 🔫
+                          </p>
+                        </div>
+                        <div
+                          className="Templates__template"
+                          key="9"
+                          onClick={[Function]}
+                        >
+                          <p
+                            className="Templates__title"
+                          >
+                            Fall Guys
+                          </p>
+                        </div>
+                        <div
+                          className="Templates__template"
+                          key="10"
+                          onClick={[Function]}
+                        >
+                          <p
+                            className="Templates__title"
+                          >
+                            Among Us
+                          </p>
+                        </div>
+                        <div
+                          className="Templates__template"
+                          key="11"
+                          onClick={[Function]}
+                        >
+                          <p
+                            className="Templates__title"
+                          >
+                            охота на ачивку 🎯
+                          </p>
+                        </div>
+                        <div
+                          className="Templates__template"
+                          key="12"
+                          onClick={[Function]}
+                        >
+                          <p
+                            className="Templates__title"
+                          >
+                            игровой марафон 🏃
+                          </p>
+                        </div>
+                        <div
+                          className="Templates__template"
+                          key="13"
+                          onClick={[Function]}
+                        >
+                          <p
+                            className="Templates__title"
+                          >
+                            спидран
+                          </p>
+                        </div>
+                        <div
+                          className="Templates__template"
+                          key="14"
+                          onClick={[Function]}
+                        >
+                          <p
+                            className="Templates__title"
+                          >
+                            обучение игре 🧠
+                          </p>
+                        </div>
+                        <div
+                          className="Templates__template"
+                          key="15"
+                          onClick={[Function]}
+                        >
+                          <p
+                            className="Templates__title"
+                          >
+                            фуд-челлендж 🍕
+                          </p>
+                        </div>
+                        <div
+                          className="Templates__template"
+                          key="16"
+                          onClick={[Function]}
+                        >
+                          <p
+                            className="Templates__title"
+                          >
+                            спеть/станцевать/нарисовать 🎨
+                          </p>
+                        </div>
+                        <div
+                          className="Templates__template"
+                          key="17"
+                          onClick={[Function]}
+                        >
+                          <p
+                            className="Templates__title"
+                          >
+                            кулинарный стрим 🍳
+                          </p>
+                        </div>
+                        <div
+                          className="Templates__template"
+                          key="18"
+                          onClick={[Function]}
+                        >
+                          <p
+                            className="Templates__title"
+                          >
+                            GeoGuessr
+                          </p>
+                        </div>
+                        <div
+                          className="Templates__template"
+                          key="19"
+                          onClick={[Function]}
+                        >
+                          <p
+                            className="Templates__title"
+                          >
+                            пройти онлайн-тесты
+                          </p>
+                        </div>
+                        <div
+                          className="Templates__template"
+                          key="20"
+                          onClick={[Function]}
+                        >
+                          <p
+                            className="Templates__title"
+                          >
+                            турнир с подписчиками 🏆
+                          </p>
+                        </div>
+                        <div
+                          className="Templates__template"
+                          key="21"
+                          onClick={[Function]}
+                        >
+                          <p
+                            className="Templates__title"
+                          >
+                            розыгрыши
+                          </p>
+                        </div>
+                        <div
+                          className="Templates__template"
+                          key="22"
+                          onClick={[Function]}
+                        >
+                          <p
+                            className="Templates__title"
+                          >
+                            совместная игра со стримером 👯
+                          </p>
+                        </div>
+                        <div
+                          className="Templates__template"
+                          key="23"
+                          onClick={[Function]}
+                        >
+                          <p
+                            className="Templates__title"
+                          >
+                            косплей
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </Templates>
+                </Connect(Templates)>
+              </div>
+            </CreateChallenge>
+          </Connect(CreateChallenge)>
+        </Route>
+      </withRouter(Connect(CreateChallenge))>
+    </Provider>
+  </Router>
+</BrowserRouter>
+`;

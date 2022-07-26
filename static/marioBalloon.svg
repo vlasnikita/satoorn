@@ -1,0 +1,15 @@
+<svg className="mario__balloon" xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink" width="140px" height="80px"
+     viewBox="472.473 238.666 254.895 188.222" preserveAspectRatio="xMidYMid meet">
+    <defs id="svgEditorDefs">
+        <polygon id="svgEditorShapeDefs"
+                 style="fill:khaki;stroke:black;vector-effect:non-scaling-stroke;stroke-width:1px;"/>
+    </defs>
+    <path d="M4,0c0,-2,-2,-3,-4,-3c-2,0,-4,1,-4,3c0,1,0,2,1,3l1,1c1,-1,1,-1,2,-1c2,0,4,-1,4,-3Z"
+          style="fill:#303030; vector-effect: non-scaling-stroke; stroke-width:2px;stroke:white;"
+          id="e2_shape" transform="matrix(-29.2592 0 0 23.25 599.5 324.75)"/>
+    <text style="fill:white;font-family:Verdana;font-size:30px;font-normal;" x="495" y="339"
+          id="e5_texte" dy="" dx="">
+        <tspan x="495" y="" dx="" dy="">Работа такая!</tspan>
+    </text>
+</svg>

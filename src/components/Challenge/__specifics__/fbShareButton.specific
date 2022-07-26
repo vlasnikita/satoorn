@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should renders correctly facebook share button 1`] = `
+<a
+  className="Challenge__shareIcon"
+  href="https://www.facebook.com/sharer.php?url=undefined/challenges
+/someChallengeId&text=Принял челлендж \\"someChallengeTitle\\" на satoorn.ru"
+  id="someId"
+  target="_blank"
+>
+  <img
+    alt="Facebook"
+    src="social-facebook.svg"
+  />
+</a>
+`;

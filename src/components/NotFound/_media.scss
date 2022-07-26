@@ -1,0 +1,19 @@
+@media only screen and (max-width: 650px) {
+  .NotFound{
+    padding: 60px;
+    width: calc(100% - 120px);
+    height: calc(100% - 120px);
+
+    &__header{
+      font-size: 1.4rem;
+
+      &_main{
+        font-size: 2.4rem;
+      }
+    }
+
+    &__item{
+      font-size: 1.4rem;
+    }
+  }
+}

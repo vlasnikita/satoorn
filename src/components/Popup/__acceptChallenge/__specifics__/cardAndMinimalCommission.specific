@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render correctly with selected CARD method and set minimal commission 1`] = `
+<div
+  className="PopupChallengeAccept"
+>
+  <div
+    className="PopupChallengeAccept__row"
+  >
+    <p
+      className="PopupChallengeAccept__text"
+    >
+      Сумма челленджа с учётом комиссии
+    </p>
+    <p
+      className="PopupChallengeAccept__amount"
+    >
+      200
+      ₽
+    </p>
+  </div>
+  <div
+    className="PopupChallengeAccept__row"
+  >
+    <p
+      className="PopupChallengeAccept__text"
+    >
+      Выберите способ выплаты
+    </p>
+    <div
+      className="PopupChallengeAccept__types"
+    >
+      <p
+        className="PopupChallengeAccept__type PopupChallengeAccept__type_active"
+        key="0"
+        onClick={[Function]}
+      >
+        Банковская карта
+      </p>
+      <p
+        className="PopupChallengeAccept__type false"
+        key="1"
+        onClick={[Function]}
+      >
+        QIWI-кошелёк
+      </p>
+    </div>
+    <div
+      className="PopupChallengeAccept__row"
+    >
+      <p
+        className="PopupChallengeAccept__text"
+      >
+        Минимальная комиссия при этом способе выплаты: 
+        30
+        ₽
+      </p>
+    </div>
+  </div>
+  <div
+    className="PopupChallengeAccept__row"
+  >
+    <p
+      className="PopupChallengeAccept__text"
+    >
+      Номер карты
+    </p>
+    <input
+      autoComplete="cc-number"
+      className="PopupChallengeAccept__input false"
+      id="cardNumber"
+      name="cardNumber"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+  </div>
+  <button
+    className="Button Button_purple Popup__submit"
+    disabled={false}
+    onClick={[Function]}
+  >
+    Принять челлендж
+  </button>
+</div>
+`;

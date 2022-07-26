@@ -1,0 +1,23 @@
+.Layout{
+  display: flex;
+  height: 100vh;
+  width: calc(100vw - 74px);
+  padding-left: $sidebarWidth;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+  color: #eeeeee;
+  background-color: #DDDDE2;
+  overflow: hidden;
+  background-repeat: repeat;
+  background-image: url("/images/pattern.png");
+}
+
+@media only screen
+and (max-width : 674px) {
+  .Layout{
+    width: 100vw;
+    padding-left: 0;
+  }
+}

@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="Templates"
+>
+  <h3
+    className="Templates__header"
+  >
+    Рекомендации
+  </h3>
+  <div
+    className="Templates__feed"
+  >
+    <div
+      className="Templates__template"
+      onClick={[Function]}
+    >
+      <p
+        className="Templates__title"
+      >
+        It's a challenge template with number 3
+      </p>
+    </div>
+    <div
+      className="Templates__template"
+      onClick={[Function]}
+    >
+      <p
+        className="Templates__title"
+      >
+        It's a challenge template with number 5
+      </p>
+    </div>
+    <div
+      className="Templates__template"
+      onClick={[Function]}
+    >
+      <p
+        className="Templates__title"
+      >
+        It's a challenge template with number 7
+      </p>
+    </div>
+    <div
+      className="Templates__template"
+      onClick={[Function]}
+    >
+      <p
+        className="Templates__title"
+      >
+        It's a challenge template with number 799
+      </p>
+    </div>
+    <div
+      className="Templates__template"
+      onClick={[Function]}
+    >
+      <p
+        className="Templates__title"
+      >
+        It's a challenge template with number 8
+      </p>
+    </div>
+    <div
+      className="Templates__template"
+      onClick={[Function]}
+    >
+      <p
+        className="Templates__title"
+      >
+        It's a challenge template with number 800
+      </p>
+    </div>
+    <div
+      className="Templates__template"
+      onClick={[Function]}
+    >
+      <p
+        className="Templates__title"
+      >
+        It's a challenge template with number 805
+      </p>
+    </div>
+    <div
+      className="Templates__template"
+      onClick={[Function]}
+    >
+      <p
+        className="Templates__title"
+      >
+        It's a challenge template with number 807
+      </p>
+    </div>
+    <div
+      className="Templates__template"
+      onClick={[Function]}
+    >
+      <p
+        className="Templates__title"
+      >
+        It's a challenge template with number 999
+      </p>
+    </div>
+  </div>
+</div>
+`;

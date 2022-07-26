@@ -1,0 +1,257 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Widgets component: 'Challenges' tab selected, no active challenge for widget 1`] = `
+<BrowserRouter
+  keyLength={0}
+>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <Provider
+      store={
+        Object {
+          "clearActions": [Function],
+          "dispatch": [Function],
+          "getActions": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+        }
+      }
+    >
+      <Connect(Widgets)>
+        <Widgets
+          activeStreamer={
+            Object {
+              "activeStreamer": Object {
+                "authenticationSource": "twitch",
+                "bio": null,
+                "challengeCount": 0,
+                "contacts": Array [],
+                "email": null,
+                "externalId": "204865822",
+                "externalPhotoLink": "https://static-cdn.jtvnw.net/user-default-pictures-uv/75305d54-c7cc-40d1-bb9c-91fbe85943c7-profile_image-300x300.png",
+                "externalProfileLink": null,
+                "followerCount": 0,
+                "id": "5f108c57399c8300013dad42",
+                "login": "vlasnikita",
+                "streamer": false,
+                "viewerCount": 0,
+                "walletAmount": 0,
+              },
+              "loaded": false,
+              "loading": false,
+            }
+          }
+          handleResetWidgetChallenge={[Function]}
+          handleSetActiveStreamerClientside={[Function]}
+          profile={
+            Object {
+              "authenticationSource": "twitch",
+              "bio": null,
+              "challengeCount": 0,
+              "contacts": Array [],
+              "email": null,
+              "externalId": "204865822",
+              "externalPhotoLink": "https://static-cdn.jtvnw.net/user-default-pictures-uv/75305d54-c7cc-40d1-bb9c-91fbe85943c7-profile_image-300x300.png",
+              "externalProfileLink": null,
+              "followerCount": 0,
+              "id": "5f108c57399c8300013dad42",
+              "login": "vlasnikita",
+              "streamer": false,
+              "viewerCount": 0,
+              "walletAmount": 0,
+            }
+          }
+          widgetChallenge={null}
+        >
+          <div
+            className="Widgets"
+          >
+            <Connect(FiltersBar)
+              activeTab="CHALLENGE"
+              handleTabClick={[Function]}
+              isWidgets={true}
+            >
+              <FiltersBar
+                activeStreamer={
+                  Object {
+                    "authenticationSource": "twitch",
+                    "bio": null,
+                    "challengeCount": 0,
+                    "contacts": Array [],
+                    "email": null,
+                    "externalId": "204865822",
+                    "externalPhotoLink": "https://static-cdn.jtvnw.net/user-default-pictures-uv/75305d54-c7cc-40d1-bb9c-91fbe85943c7-profile_image-300x300.png",
+                    "externalProfileLink": null,
+                    "followerCount": 0,
+                    "id": "5f108c57399c8300013dad42",
+                    "login": "vlasnikita",
+                    "streamer": false,
+                    "viewerCount": 0,
+                    "walletAmount": 0,
+                  }
+                }
+                activeTab="CHALLENGE"
+                handleGetStreamers={[Function]}
+                handleResetFilters={[Function]}
+                handleSetChallengesByUserIdFilter={[Function]}
+                handleSetChallengesByUserIdSearchTerm={[Function]}
+                handleSetChallengesFilter={[Function]}
+                handleSetChallengesSearchTerm={[Function]}
+                handleSetStreamersSearchTerm={[Function]}
+                handleTabClick={[Function]}
+                isWidgets={true}
+                profile={
+                  Object {
+                    "authenticationSource": "twitch",
+                    "bio": null,
+                    "challengeCount": 0,
+                    "contacts": Array [],
+                    "email": null,
+                    "externalId": "204865822",
+                    "externalPhotoLink": "https://static-cdn.jtvnw.net/user-default-pictures-uv/75305d54-c7cc-40d1-bb9c-91fbe85943c7-profile_image-300x300.png",
+                    "externalProfileLink": null,
+                    "followerCount": 0,
+                    "id": "5f108c57399c8300013dad42",
+                    "login": "vlasnikita",
+                    "streamer": false,
+                    "viewerCount": 0,
+                    "walletAmount": 0,
+                  }
+                }
+              >
+                <div
+                  className="FiltersBar"
+                >
+                  <WidgetsBar
+                    activeStreamer={
+                      Object {
+                        "authenticationSource": "twitch",
+                        "bio": null,
+                        "challengeCount": 0,
+                        "contacts": Array [],
+                        "email": null,
+                        "externalId": "204865822",
+                        "externalPhotoLink": "https://static-cdn.jtvnw.net/user-default-pictures-uv/75305d54-c7cc-40d1-bb9c-91fbe85943c7-profile_image-300x300.png",
+                        "externalProfileLink": null,
+                        "followerCount": 0,
+                        "id": "5f108c57399c8300013dad42",
+                        "login": "vlasnikita",
+                        "streamer": false,
+                        "viewerCount": 0,
+                        "walletAmount": 0,
+                      }
+                    }
+                    activeTab="CHALLENGE"
+                    handleGetStreamers={[Function]}
+                    handleResetFilters={[Function]}
+                    handleSetChallengesByUserIdFilter={[Function]}
+                    handleSetChallengesByUserIdSearchTerm={[Function]}
+                    handleSetChallengesFilter={[Function]}
+                    handleSetChallengesSearchTerm={[Function]}
+                    handleSetStreamersSearchTerm={[Function]}
+                    handleTabClick={[Function]}
+                    isWidgets={true}
+                    profile={
+                      Object {
+                        "authenticationSource": "twitch",
+                        "bio": null,
+                        "challengeCount": 0,
+                        "contacts": Array [],
+                        "email": null,
+                        "externalId": "204865822",
+                        "externalPhotoLink": "https://static-cdn.jtvnw.net/user-default-pictures-uv/75305d54-c7cc-40d1-bb9c-91fbe85943c7-profile_image-300x300.png",
+                        "externalProfileLink": null,
+                        "followerCount": 0,
+                        "id": "5f108c57399c8300013dad42",
+                        "login": "vlasnikita",
+                        "streamer": false,
+                        "viewerCount": 0,
+                        "walletAmount": 0,
+                      }
+                    }
+                  >
+                    <div
+                      className="FiltersBar__block"
+                    >
+                      <div
+                        className="FiltersBar__item FiltersBar__item_active"
+                        onClick={[Function]}
+                      >
+                        Активный челлендж
+                      </div>
+                      <div
+                        className="FiltersBar__item false"
+                        onClick={[Function]}
+                      >
+                        Оверлей-уведомления
+                      </div>
+                    </div>
+                  </WidgetsBar>
+                </div>
+              </FiltersBar>
+            </Connect(FiltersBar)>
+            <div
+              className="Widgets__preview"
+            >
+              <div
+                className="Widgets__previewBody"
+              >
+                <img
+                  className="Widgets__previewPipe"
+                  src="templates-pipe.svg"
+                />
+                <h3
+                  className="Widgets__previewHeader"
+                >
+                  Предпросмотр
+                </h3>
+                <div
+                  className="Widgets__previewScreen"
+                  style={
+                    Object {
+                      "backgroundImage": "widgets-screensaver.png",
+                    }
+                  }
+                >
+                  <img
+                    className="Widgets__previewStreamer"
+                    src="widgets-streamer.png"
+                  />
+                </div>
+                <div
+                  className="Widgets__previewFakebuttons"
+                >
+                  <span />
+                  <span />
+                  <span />
+                </div>
+              </div>
+            </div>
+          </div>
+        </Widgets>
+      </Connect(Widgets)>
+    </Provider>
+  </Router>
+</BrowserRouter>
+`;

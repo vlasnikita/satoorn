@@ -1,0 +1,76 @@
+.StreamersFeed{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: scroll;
+    width: 100%;
+    height: calc(100% - 50px);
+    padding-top: $headerHeight;
+}
+
+.Streamer{
+    text-decoration: none;
+    width: 440px;
+    border-radius: 5px;
+    position: relative;
+    background: #fff;
+    padding: 15px 30px;
+    margin: 15px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px 1px rgba(17, 17, 17, .125);
+    cursor: pointer;
+    overflow: hidden;
+    height: 80px;
+    min-height: 80px;
+
+    &__avatar {
+        transition: .25s ease-out;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        margin-right: 20px;
+        border: 3px solid #fff;
+        box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.1);
+    }
+
+}
+
+.StreamersFeed::-webkit-scrollbar-track {
+display: none;
+}
+
+.StreamersFeed::-webkit-scrollbar {
+display: none;
+}
+
+.StreamersFeed::-webkit-scrollbar-thumb {
+display: none;
+}
+
+
+//$loadingBg: #f8f8f8;
+.Streamer_loading {
+opacity: .75;
+cursor: auto;
+
+    &:hover {
+        &:after {
+            display: none;
+        }
+    }
+
+    .Streamer__avatar {
+        box-shadow: none;
+    }
+
+
+    .Streamer__button{
+        box-shadow: none;
+    }
+}
+
+@import "/media";

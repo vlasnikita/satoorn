@@ -1,0 +1,684 @@
+@keyframes copied {
+  0% {
+    background-color: #25b125;
+  }
+
+  100% {
+    background-color: $mainPurple;
+  }
+}
+@keyframes slideInChallengePreviewLine {
+  0% {
+    bottom: 100%;
+    right: 100%;
+  }
+
+  100% {
+    bottom: calc(100% - 120px);
+    right: calc(100% - 300px);
+  }
+}
+@keyframes slideInChallengePreviewCard {
+  0% {
+    bottom: 100%;
+    right: 100%;
+  }
+
+  100% {
+    bottom: calc(100% - 180px);
+    right: calc(100% - 200px);
+  }
+}
+@keyframes moveHorizontalDashedLine {
+  0% {
+    top: 0%;
+    opacity: 1;
+  }
+  90% {
+    top: 50%;
+    opacity: 1;
+  }
+  100% {
+    top: 50%;
+    opacity: 0;
+  }
+}
+@keyframes moveVerticalDashedLine {
+  0% {
+    left: 0%;
+    opacity: 1;
+  }
+  90% {
+    left: 50%;
+    opacity: 1;
+  }
+  100% {
+    left: 50%;
+    opacity: 0;
+
+  }
+}
+
+// Colors
+//$bg-color: hsl(256,33,10);
+$bg-color: #303040;
+$dot-color: hsl(256,33,70);
+// Dimensions
+$dot-size: 1px;
+$dot-space: 10px;
+
+$sidebar-width: 400px;
+$widget-text-shadow: 0px 0px 1pt #000, 0px 0px 2pt #000, 0px 0px 3pt #000;
+$widget-text-shadow-light: 0 0 1pt #111, 0 0 1pt #333;
+
+.Widgets {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  background-image: /* tint image */
+          linear-gradient(to right, rgba(192, 192, 192, 0.85), rgba(192, 192, 192, 0.85)),
+            /* checkered effect */
+          linear-gradient(to right, black 50%, white 50%),
+          linear-gradient(to bottom, black 50%, white 50%);
+  background-blend-mode: normal, difference, normal;
+  background-size: 15px 15px;
+
+  &:before{
+    user-select: none;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    opacity: .8;
+    background-image: linear-gradient(
+                    35deg
+            ,#efa875,#cba7cb 57%,#64b4f3);
+  }
+
+  &__sidebar{
+    z-index: 1;
+    height: 100%;
+    width: $sidebar-width;
+    min-width: $sidebar-width;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar{
+      display: none;
+    }
+
+    &:before{
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: #f4f4f4;
+    }
+
+    &Header{
+      height: 50px;
+      width: 100%;
+      background: #fafafa;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+
+      &Text{
+        font-weight: normal;
+        font-size: 1.6rem;
+        color: #555;
+        height: 100%;
+        line-height: 50px;
+        padding-left: 20px;
+      }
+    }
+
+    &List {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      padding-top: 30px;
+    }
+
+    &Item {
+      border-radius: 6px;
+      width: 250px;
+      height: 62px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      background: #e6e6f0;
+
+      &:hover{
+        background: #d7d7e1;
+        cursor: pointer;
+      }
+
+      &Icon{
+        &Container{
+          height: 100%;
+          width: 44px;
+          margin-left: 8px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+
+        }
+      }
+
+      &Text{
+        color: #333;
+        font-size: 1.6rem;
+      }
+    }
+
+    &Icon {
+      width: 50%;
+
+      &Container{
+        height: 80%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  &__button {
+    background: #fff;
+    padding: 0;
+    width: 32px;
+    margin-left: 5px;
+  }
+
+  &__canvas{
+    width: calc(100% - 400px);
+    height: 100%;
+    position: relative;
+
+    &_hidden {
+      visibility: hidden;
+    }
+
+    &Streamer{
+      position: absolute;
+      bottom: 0;
+      right: 10px;
+      width: 100px;
+    }
+  }
+
+  &__feed{
+    position: absolute;
+    left: $sidebar-width;
+    height: 100%;
+    width: calc(100% - 400px); // - $sidebar-width
+  }
+
+  &__widget{
+    &Container{
+      display: flex !important;
+      border-radius: 1px;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #888;
+      padding: 10px;
+      position: relative;
+
+      &:after{
+        content: "";
+        position: absolute;
+        right: -1px;
+        bottom: -1px;
+        height: 9px;
+        width: 9px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: transparent #555 #555 transparent;
+        border-bottom-right-radius: 1px;
+      }
+
+      &_active{
+        border: 1px solid $mainPurple;
+        box-shadow: 0 0 2px 1px rgba(92, 11, 242, 0.5);
+
+        &:after{
+          border-color: transparent $mainPurple $mainPurple transparent;
+        }
+      }
+
+      &:hover{
+        .Widgets__widgetDelete {
+          visibility: visible;
+        }
+      }
+    }
+
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    user-select: none;
+    pointer-events: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 6px;
+
+    &Delete{
+      position: absolute;
+      top: 3px;
+      right: 3px;
+      height: 22px;
+      width: 22px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: none;
+      visibility: hidden;
+
+      img {
+        height: 18px;
+      }
+    }
+
+    &_invite{
+      .Widgets__widgetLogo{
+        height: 40px;
+        pointer-events:none
+      }
+      .Widgets__widgetText{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        height: 40px;
+        margin-left: 5px;
+      }
+      .Widgets__widgetMessage, .Widgets__widgetUrl{
+        position: relative;
+        font-size: 1.8rem;
+        color: #fff;
+        text-shadow: $widget-text-shadow;
+      }
+      .Widgets__widgetMessage{
+        font-size: 1.4rem;
+      }
+      .Widgets__widgetUrl{
+        color: $mainYellow;
+        letter-spacing: 0.5pt;
+      }
+
+      &_top {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        .Widgets__widgetLogo{
+          margin-bottom: 5px;
+        }
+        .Widgets__widgetText{
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+          margin-left: 0;
+        }
+      }
+
+      &_right {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        align-items: center;
+
+        .Widgets__widgetLogo{
+          margin-bottom: 5px;
+        }
+        .Widgets__widgetText{
+          align-items: flex-end;
+          margin-left: 0;
+          margin-right: 5px;
+          text-align: right;
+        }
+      }
+    }
+
+    &_challenge{
+      flex-direction: column;
+      margin: 0;
+
+      .Challenge__header{
+        padding: 0;
+        width: 100%;
+      }
+      .Challenge__streamer{
+        align-items: center;
+        width: 100%;
+
+        &Login{
+          margin-bottom: 5px;
+          width: 100%;
+          text-overflow: unset;
+          max-width: unset;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+      }
+      .Challenge__price{
+        position: relative;
+        left: unset;
+        bottom: unset;
+        height: 100%;
+        width: 100%;
+        transform: translateY(-6px);
+      }
+
+      &_card{
+        .Challenge__cover{
+          transform: unset;
+          height: 50px;
+        }
+        .Challenge__body{
+          padding: 0;
+          width: 100%;
+        }
+        .Challenge__metaDonaters{
+          width: 100%;
+          margin: 0;
+        }
+        .Challenge__metaIcon{
+          margin-left: 0;
+          margin-right: 3px;
+        }
+      }
+
+      &_line{
+        .Challenge__header{
+          height: 40px;
+          flex-direction: row;
+        }
+        .Challenge__title{
+          margin-bottom: 0;
+          margin-top: 5px;
+        }
+        .Challenge__streamer{
+          width: 58%;
+          padding-bottom: 0;
+
+          &Login{
+            margin-bottom: 0;
+            margin-right: 2%;
+            height: 100%;
+            align-items: center;
+          }
+        }
+        .Challenge__price{
+          width: 42%;
+          transform: none;
+
+          &Text{
+            border: none;
+            border-radius: 4px;
+          }
+        }
+      }
+    }
+
+    &_notransparent {
+      background: #fff;
+      * {
+        color: #222 !important;
+        text-shadow: none !important;
+      }
+
+      .Widgets__widgetUrl{
+        color: $mainPurple !important;
+      }
+    }
+
+    &_notifications{
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 0;
+
+      .Widgets__widgetMessage{
+        text-align: center;
+        text-shadow: $widget-text-shadow;
+
+        &_header{
+          color: $mainYellow;
+          text-shadow: $widget-text-shadow;
+        }
+
+        &_link{
+          color: $mainYellow;
+          letter-spacing: 0.5pt;
+        }
+      }
+    }
+  }
+
+  &__body {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__block {
+    margin-bottom: 20px;
+
+    &_row{
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    &_first {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+      border-bottom: 1px solid #eee;
+      margin-bottom: 0;
+    }
+
+    &_middle{
+      border-radius: 0;
+      border-bottom: 1px solid #eee;
+      margin-bottom: 0;
+    }
+
+    &_last {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+    }
+  }
+
+  &__title{
+    z-index: 1;
+    top: 200px;
+    position: absolute;
+    left: 15px;
+    width: auto;
+    height: 40px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__text{
+    color: #222;
+    font-weight: bold;
+    font-size: 1.6rem;
+
+    &_normal {
+      font-weight: normal;
+      font-size: 1.2rem;
+      margin-bottom: 5px;
+    }
+
+    &_mgleft{
+      font-weight: normal;
+      font-size: 1.2rem;
+      margin-left: 5px;
+    }
+  }
+
+  &__input{
+    &_checkbox{
+      padding: 0;
+      width: 22px;
+      height: 22px;
+    }
+  }
+
+  &__format{
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &_invite{
+      margin-top: 10px;
+    }
+
+    &Item{
+      width: 150px;
+      height: 150px;
+      border: 2px solid #f4f4f4;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background: none;
+      outline: none;
+      border-radius: 6px;
+      border-top-left-radius: 0;
+      margin-left: 5px;
+      margin-right: 15px;
+      cursor: pointer;
+
+      &_active {
+        border: 2px solid $mainYellow;
+
+        .Widgets__formatLabel {
+          background: $mainYellow;
+          color: #222;
+        }
+      }
+
+      &_invite {
+        width: 60px;
+        height: 60px;
+        border-top-left-radius: 6px;
+
+        img {
+          width: 40px;
+          box-shadow: none !important;
+        }
+
+        &_top img { width: 30px}
+      }
+
+      &_notifications {
+        padding: 0;
+        overflow: hidden;
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+
+        img {
+          height: 100%;
+        }
+
+        span{
+          font-size: 1.3rem;
+          font-weight: bold;
+          color: $mainPurple;
+        }
+      }
+    }
+
+    &Label{
+      position: absolute;
+      bottom: 100%;
+      left: -2px;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      background: #f4f4f4;
+      font-size: 1rem;
+      width: 50%;
+      height: 16px;
+      line-height: 18px;
+      text-align: center;
+      color: #aaa;
+    }
+
+    img{
+      box-shadow: 0 5px 15px 0 rgba(0,0,0,.075);
+    }
+  }
+
+  &__url{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    input {
+      outline: none;
+      font-weight: bold;
+      font-size: 1.4rem;
+      width: calc(100% - 20px);
+      height: 36px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 0 10px;
+    }
+  }
+
+  &__copyurl{
+    min-width: 120px;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+
+    &_copied{
+      animation: copied 1.8s 1;
+    }
+  }
+}
+

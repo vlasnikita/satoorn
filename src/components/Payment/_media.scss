@@ -1,0 +1,17 @@
+@media only screen
+and (max-width : 962px){
+    .OrdersFeed{
+        &__body{
+            max-width: 580px;
+        }
+    }
+}
+
+@media only screen
+and (max-width : 622px){
+    .OrdersFeed{
+        &__body{
+            max-width: 290px;
+        }
+    }
+}

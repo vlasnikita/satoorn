@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly someone's Challenge 1`] = `
+<div
+  className="Challenge 
+                    
+                    "
+  id="Challenge_1"
+>
+  <span
+    className="Challenge__widgetSetter"
+    onClick={[Function]}
+  />
+  <div
+    className="Challenge__header"
+  >
+    <div
+      className="Challenge__streamer"
+    >
+      <img
+        className="Challenge__streamerAvatar"
+        src="https://images-cdn.9gag.com/photo/anbZVN0_700b.jpg"
+      />
+      <a
+        className="Challenge__streamerLogin"
+        href="/user_1"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="Challenge__meta"
+    >
+      <div
+        className="Challenge__metaColumn Challenge__metaColumn_mgRight"
+      >
+        <div
+          className="Challenge__metaRow"
+        >
+          <div
+            className="Challenge__metaDonaters"
+          >
+            <div
+              className="Challenge__metaText"
+            >
+              10
+            </div>
+            <img
+              className="Challenge__metaIcon"
+              src="heart.svg"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="Challenge__metaColumn"
+      >
+        <span
+          className="Challenge__metaLabel Challenge__metaLabel_solo"
+        >
+          Автор
+        </span>
+        <div
+          className="Challenge__metaRow"
+        >
+          <a
+            className="Challenge__metaText"
+            href="/akareinaka"
+            onClick={[Function]}
+          >
+            akareinaka
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="Challenge__cover Challenge__cover_t5"
+  >
+    <span
+      className="Challenge__coverShadow"
+    />
+    <img
+      src="bg-white.png"
+    />
+    <div
+      className="Challenge__price"
+    >
+      <p
+        className="Challenge__priceText"
+      >
+        78
+        <span
+          className="Challenge__priceText_currency"
+        >
+          ₽
+        </span>
+      </p>
+    </div>
+  </div>
+  <div
+    className="Challenge__body"
+  >
+    <a
+      className="Challenge__title"
+      href="/user_1/challenges/1"
+      onClick={[Function]}
+    >
+      some title
+    </a>
+    <div
+      className="Challenge__actions false"
+    >
+      <div
+        className="Challenge__inputContainer"
+      >
+        <input
+          className="Challenge__input"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder={30}
+          value={30}
+        />
+        <span
+          className="Challenge__inputCurrency"
+        >
+          ₽
+        </span>
+      </div>
+      <button
+        className="Button Button_purple Challenge__button"
+        id="donateButton"
+        onClick={[Function]}
+      >
+        Повысить
+      </button>
+    </div>
+  </div>
+  <div
+    className="Challenge__description"
+  >
+    Some default description Some default description Some default description Some default description Some default description Some default description Some default description Some default description Some default description Some default description 
+    <span
+      className="Challenge__descriptionExpand"
+    />
+  </div>
+  <a
+    className="Challenge__description Challenge__description_link"
+    href="/challenges/1"
+    onClick={[Function]}
+  >
+    Открыть челлендж
+  </a>
+</div>
+`;

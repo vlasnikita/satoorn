@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly FiltersBar 1`] = `
+<div
+  className="Container FiltersBar"
+>
+  <div
+    className="Container__body FiltersBar__body "
+  >
+    <button
+      className="FiltersBar__block FiltersBar__block_toggler FiltersBar__block_toggler_search"
+      onClick={[Function]}
+    >
+      <div
+        className="FiltersBar__searchButton"
+      >
+        <img
+          src="lens.svg"
+          width={16}
+        />
+      </div>
+    </button>
+    <div
+      className="FiltersBar__search"
+    >
+      <input
+        className="FiltersBar__searchInput"
+        onChange={[Function]}
+        placeholder="Поиск челленджа"
+        type="text"
+        value=""
+      />
+      <div
+        className="FiltersBar__searchButton"
+      >
+        <img
+          alt="Поиск"
+          src="lens.svg"
+          width={16}
+        />
+      </div>
+    </div>
+    <button
+      className="FiltersBar__block FiltersBar__block_toggler FiltersBar__block_toggler_filter"
+      onClick={[Function]}
+    >
+      <div
+        className="FiltersBar__searchButton"
+      >
+        <img
+          src="filter.svg"
+          width={16}
+        />
+      </div>
+    </button>
+    <div
+      className="FiltersBar__block FiltersBar__block_bars"
+    >
+      <div
+        className="FiltersBar__item FiltersBar__item_active"
+        id="FiltersBar__item_0"
+        onClick={[Function]}
+      >
+        Доступные
+      </div>
+      <div
+        className="FiltersBar__item false"
+        id="FiltersBar__item_1"
+        onClick={[Function]}
+      >
+        Принятые
+      </div>
+    </div>
+  </div>
+</div>
+`;

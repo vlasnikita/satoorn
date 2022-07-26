@@ -1,0 +1,225 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<BrowserRouter
+  keyLength={0}
+>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <Provider
+      store={
+        Object {
+          "clearActions": [Function],
+          "dispatch": [Function],
+          "getActions": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+        }
+      }
+    >
+      <withRouter(Connect(HowItWorks))>
+        <Route>
+          <Connect(HowItWorks)
+            history={
+              Object {
+                "action": "POP",
+                "block": [Function],
+                "createHref": [Function],
+                "go": [Function],
+                "goBack": [Function],
+                "goForward": [Function],
+                "length": 1,
+                "listen": [Function],
+                "location": Object {
+                  "hash": "",
+                  "pathname": "/",
+                  "search": "",
+                  "state": undefined,
+                },
+                "push": [Function],
+                "replace": [Function],
+              }
+            }
+            location={
+              Object {
+                "hash": "",
+                "pathname": "/",
+                "search": "",
+                "state": undefined,
+              }
+            }
+            match={
+              Object {
+                "isExact": true,
+                "params": Object {},
+                "path": "/",
+                "url": "/",
+              }
+            }
+          >
+            <HowItWorks
+              handleGetSettings={[Function]}
+              history={
+                Object {
+                  "action": "POP",
+                  "block": [Function],
+                  "createHref": [Function],
+                  "go": [Function],
+                  "goBack": [Function],
+                  "goForward": [Function],
+                  "length": 1,
+                  "listen": [Function],
+                  "location": Object {
+                    "hash": "",
+                    "pathname": "/",
+                    "search": "",
+                    "state": undefined,
+                  },
+                  "push": [Function],
+                  "replace": [Function],
+                }
+              }
+              location={
+                Object {
+                  "hash": "",
+                  "pathname": "/",
+                  "search": "",
+                  "state": undefined,
+                }
+              }
+              match={
+                Object {
+                  "isExact": true,
+                  "params": Object {},
+                  "path": "/",
+                  "url": "/",
+                }
+              }
+              profile={
+                Object {
+                  "loaded": true,
+                  "profile": Object {
+                    "authenticationSource": "twitch",
+                    "bio": null,
+                    "challengeCount": 0,
+                    "contacts": Array [],
+                    "email": null,
+                    "externalId": "204865822",
+                    "externalPhotoLink": "https://static-cdn.jtvnw.net/user-default-pictures-uv/75305d54-c7cc-40d1-bb9c-91fbe85943c7-profile_image-300x300.png",
+                    "externalProfileLink": null,
+                    "followerCount": 0,
+                    "id": "5f108c57399c8300013dad42",
+                    "login": "vlasnikita",
+                    "streamer": false,
+                    "viewerCount": 0,
+                    "walletAmount": 0,
+                  },
+                }
+              }
+              settings={
+                Object {
+                  "loaded": true,
+                  "loading": false,
+                  "value": Object {
+                    "challengeAcceptDetailsConfirmed": true,
+                    "challengeDonateDetailsConfirmed": true,
+                    "serviceOnboardingConfirmed": true,
+                  },
+                }
+              }
+            >
+              <div
+                className="HowItWorks"
+              >
+                <a
+                  className="HowItWorks__pdf"
+                  href={Object {}}
+                  target="_blank"
+                >
+                  <img
+                    src="howitworks-icon.svg"
+                  />
+                  <p>
+                    Открыть PDF
+                  </p>
+                </a>
+                <div
+                  className="HowItWorks__slider"
+                >
+                  <img
+                    className="HowItWorks__slide"
+                    src="howitworks-1.png"
+                  />
+                  <div
+                    className="HowItWorks__navigation"
+                  >
+                    <div
+                      className="HowItWorks__crumbs"
+                    >
+                      <span
+                        className="HowItWorks__crumb HowItWorks__crumb_active"
+                        key="1"
+                      />
+                      <span
+                        className="HowItWorks__crumb "
+                        key="2"
+                      />
+                      <span
+                        className="HowItWorks__crumb "
+                        key="3"
+                      />
+                      <span
+                        className="HowItWorks__crumb "
+                        key="4"
+                      />
+                      <span
+                        className="HowItWorks__crumb "
+                        key="5"
+                      />
+                      <span
+                        className="HowItWorks__crumb "
+                        key="6"
+                      />
+                    </div>
+                    <div
+                      className="HowItWorks__buttons"
+                    >
+                      <button
+                        className="Button Button_purple HowItWorks__next"
+                        onClick={[Function]}
+                      >
+                        Далее
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </HowItWorks>
+          </Connect(HowItWorks)>
+        </Route>
+      </withRouter(Connect(HowItWorks))>
+    </Provider>
+  </Router>
+</BrowserRouter>
+`;

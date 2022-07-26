@@ -1,0 +1,22 @@
+@media only screen and (max-width: 770px) {
+    .Popup{
+        &__body{
+            width: 100%;
+            border-radius: 0;
+        }
+
+        &__close{
+            left: unset;
+            top: -30px;
+            right: 5px;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .Popup{
+        &__body{
+            height: 80%;
+        }
+    }
+}

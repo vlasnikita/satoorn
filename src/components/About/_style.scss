@@ -1,0 +1,23 @@
+.About {
+  height: calc(100% - 30px);
+  width: calc(100% - 30px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+  padding-top: 80px;
+  padding-left: 30px;
+
+  &__header{
+    color: #333;
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  &__link {
+    color: #333;
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+  }
+}

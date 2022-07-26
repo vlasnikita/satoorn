@@ -1,0 +1,829 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render onbording if service onboarding is not confirmed 1`] = `
+<BrowserRouter
+  keyLength={0}
+>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/how-it-works",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <Provider
+      store={
+        Object {
+          "clearActions": [Function],
+          "dispatch": [Function],
+          "getActions": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+        }
+      }
+    >
+      <withRouter(Connect(Header))>
+        <Route>
+          <Connect(Header)
+            history={
+              Object {
+                "action": "POP",
+                "block": [Function],
+                "createHref": [Function],
+                "go": [Function],
+                "goBack": [Function],
+                "goForward": [Function],
+                "length": 1,
+                "listen": [Function],
+                "location": Object {
+                  "hash": "",
+                  "pathname": "/how-it-works",
+                  "search": "",
+                  "state": undefined,
+                },
+                "push": [Function],
+                "replace": [Function],
+              }
+            }
+            location={
+              Object {
+                "hash": "",
+                "pathname": "/how-it-works",
+                "search": "",
+                "state": undefined,
+              }
+            }
+            match={
+              Object {
+                "isExact": false,
+                "params": Object {},
+                "path": "/",
+                "url": "/",
+              }
+            }
+          >
+            <Header
+              activeStreamer={
+                Object {
+                  "activeStreamer": Object {
+                    "authenticationSource": "twitch",
+                    "bio": null,
+                    "challengeCount": 0,
+                    "contacts": Array [],
+                    "email": null,
+                    "externalId": "204865822",
+                    "externalPhotoLink": "https://static-cdn.jtvnw.net/user-default-pictures-uv/75305d54-c7cc-40d1-bb9c-91fbe85943c7-profile_image-300x300.png",
+                    "externalProfileLink": null,
+                    "followerCount": 0,
+                    "id": "5f108c57399c8300013dad42",
+                    "login": "vlasnikita",
+                    "streamer": false,
+                    "viewerCount": 0,
+                    "walletAmount": 0,
+                  },
+                  "loaded": false,
+                  "loading": false,
+                }
+              }
+              alert={
+                Object {
+                  "opened": false,
+                }
+              }
+              handleGetSettings={[Function]}
+              history={
+                Object {
+                  "action": "POP",
+                  "block": [Function],
+                  "createHref": [Function],
+                  "go": [Function],
+                  "goBack": [Function],
+                  "goForward": [Function],
+                  "length": 1,
+                  "listen": [Function],
+                  "location": Object {
+                    "hash": "",
+                    "pathname": "/how-it-works",
+                    "search": "",
+                    "state": undefined,
+                  },
+                  "push": [Function],
+                  "replace": [Function],
+                }
+              }
+              location={
+                Object {
+                  "hash": "",
+                  "pathname": "/how-it-works",
+                  "search": "",
+                  "state": undefined,
+                }
+              }
+              match={
+                Object {
+                  "isExact": false,
+                  "params": Object {},
+                  "path": "/",
+                  "url": "/",
+                }
+              }
+              popup={
+                Object {
+                  "opened": false,
+                  "type": undefined,
+                }
+              }
+              profile={
+                Object {
+                  "loaded": true,
+                  "profile": Object {
+                    "authenticationSource": "twitch",
+                    "bio": null,
+                    "challengeCount": 0,
+                    "contacts": Array [],
+                    "email": null,
+                    "externalId": "204865822",
+                    "externalPhotoLink": "https://static-cdn.jtvnw.net/user-default-pictures-uv/75305d54-c7cc-40d1-bb9c-91fbe85943c7-profile_image-300x300.png",
+                    "externalProfileLink": null,
+                    "followerCount": 0,
+                    "id": "5f108c57399c8300013dad42",
+                    "login": "vlasnikita",
+                    "streamer": false,
+                    "viewerCount": 0,
+                    "walletAmount": 0,
+                  },
+                }
+              }
+              settings={
+                Object {
+                  "loaded": true,
+                  "loading": false,
+                  "value": Object {
+                    "challengeAcceptDetailsConfirmed": true,
+                    "challengeDonateDetailsConfirmed": true,
+                    "serviceOnboardingConfirmed": true,
+                  },
+                }
+              }
+              unregistred={
+                Object {
+                  "opened": false,
+                }
+              }
+            >
+              <div
+                className="Header"
+              >
+                <NavLink
+                  activeClassName="active"
+                  aria-current="page"
+                  className="Header__logo"
+                  to="/"
+                >
+                  <Route
+                    path="\\\\/"
+                  >
+                    <Link
+                      aria-current="page"
+                      className="Header__logo active"
+                      replace={false}
+                      style={Object {}}
+                      to="/"
+                    >
+                      <a
+                        aria-current="page"
+                        className="Header__logo active"
+                        href="/"
+                        onClick={[Function]}
+                        style={Object {}}
+                      >
+                        <Logo>
+                          <img
+                            src="logo.svg"
+                          />
+                        </Logo>
+                      </a>
+                    </Link>
+                  </Route>
+                </NavLink>
+                <Connect(Character)>
+                  <Character
+                    activeStreamer={
+                      Object {
+                        "authenticationSource": "twitch",
+                        "bio": null,
+                        "challengeCount": 0,
+                        "contacts": Array [],
+                        "email": null,
+                        "externalId": "204865822",
+                        "externalPhotoLink": "https://static-cdn.jtvnw.net/user-default-pictures-uv/75305d54-c7cc-40d1-bb9c-91fbe85943c7-profile_image-300x300.png",
+                        "externalProfileLink": null,
+                        "followerCount": 0,
+                        "id": "5f108c57399c8300013dad42",
+                        "login": "vlasnikita",
+                        "streamer": false,
+                        "viewerCount": 0,
+                        "walletAmount": 0,
+                      }
+                    }
+                    handleGetMinPayment={[Function]}
+                    handleGetNotifications={[Function]}
+                    handleGetProfile={[Function]}
+                    handleGetSettings={[Function]}
+                    handleOpenPopup={[Function]}
+                    isProfileLoaded={true}
+                    notifications={
+                      Array [
+                        Object {
+                          "date": "2020-12-20",
+                          "id": "string1",
+                          "read": false,
+                          "text": "string",
+                        },
+                        Object {
+                          "date": "2020-11-20",
+                          "id": "string2",
+                          "read": false,
+                          "text": "string",
+                        },
+                      ]
+                    }
+                    notificationsLoaded={false}
+                    notificationsLoading={false}
+                    profile={
+                      Object {
+                        "authenticationSource": "twitch",
+                        "bio": null,
+                        "challengeCount": 0,
+                        "contacts": Array [],
+                        "email": null,
+                        "externalId": "204865822",
+                        "externalPhotoLink": "https://static-cdn.jtvnw.net/user-default-pictures-uv/75305d54-c7cc-40d1-bb9c-91fbe85943c7-profile_image-300x300.png",
+                        "externalProfileLink": null,
+                        "followerCount": 0,
+                        "id": "5f108c57399c8300013dad42",
+                        "login": "vlasnikita",
+                        "streamer": false,
+                        "viewerCount": 0,
+                        "walletAmount": 0,
+                      }
+                    }
+                    settingsLoaded={true}
+                    settingsLoading={false}
+                  >
+                    <div
+                      className="Character"
+                    >
+                      <div
+                        className="Character__bell 
+                Character__bell_unread 
+                false"
+                        onClick={[Function]}
+                      >
+                        <img
+                          alt="Уведомления"
+                          className="Character__bellImage"
+                          height={18}
+                          src="bell.svg"
+                        />
+                      </div>
+                      <div
+                        className="Character__avatarContainer "
+                      >
+                        <img
+                          alt="vlasnikita"
+                          className="Character__avatar"
+                          onClick={[Function]}
+                          src="https://static-cdn.jtvnw.net/user-default-pictures-uv/75305d54-c7cc-40d1-bb9c-91fbe85943c7-profile_image-300x300.png"
+                        />
+                        <div
+                          className="Character__dropdown"
+                        >
+                          <div
+                            className="Character__dropdownLoginContainer"
+                          >
+                            <p
+                              className="Character__dropdownLogin"
+                            >
+                              vlasnikita
+                            </p>
+                          </div>
+                          <div
+                            className="Character__dropdownList"
+                          >
+                            <a
+                              className="Character__dropdownItem"
+                              href="/api/logout"
+                            >
+                              выйти
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </Character>
+                </Connect(Character)>
+              </div>
+              <withRouter(Connect(Sidebar))
+                location={
+                  Object {
+                    "hash": "",
+                    "pathname": "/how-it-works",
+                    "search": "",
+                    "state": undefined,
+                  }
+                }
+              >
+                <Route>
+                  <Connect(Sidebar)
+                    history={
+                      Object {
+                        "action": "POP",
+                        "block": [Function],
+                        "createHref": [Function],
+                        "go": [Function],
+                        "goBack": [Function],
+                        "goForward": [Function],
+                        "length": 1,
+                        "listen": [Function],
+                        "location": Object {
+                          "hash": "",
+                          "pathname": "/how-it-works",
+                          "search": "",
+                          "state": undefined,
+                        },
+                        "push": [Function],
+                        "replace": [Function],
+                      }
+                    }
+                    location={
+                      Object {
+                        "hash": "",
+                        "pathname": "/how-it-works",
+                        "search": "",
+                        "state": undefined,
+                      }
+                    }
+                    match={
+                      Object {
+                        "isExact": false,
+                        "params": Object {},
+                        "path": "/",
+                        "url": "/",
+                      }
+                    }
+                  >
+                    <Sidebar
+                      dispatch={[Function]}
+                      history={
+                        Object {
+                          "action": "POP",
+                          "block": [Function],
+                          "createHref": [Function],
+                          "go": [Function],
+                          "goBack": [Function],
+                          "goForward": [Function],
+                          "length": 1,
+                          "listen": [Function],
+                          "location": Object {
+                            "hash": "",
+                            "pathname": "/how-it-works",
+                            "search": "",
+                            "state": undefined,
+                          },
+                          "push": [Function],
+                          "replace": [Function],
+                        }
+                      }
+                      location={
+                        Object {
+                          "hash": "",
+                          "pathname": "/how-it-works",
+                          "search": "",
+                          "state": undefined,
+                        }
+                      }
+                      match={
+                        Object {
+                          "isExact": false,
+                          "params": Object {},
+                          "path": "/",
+                          "url": "/",
+                        }
+                      }
+                      profile={
+                        Object {
+                          "authenticationSource": "twitch",
+                          "bio": null,
+                          "challengeCount": 0,
+                          "contacts": Array [],
+                          "email": null,
+                          "externalId": "204865822",
+                          "externalPhotoLink": "https://static-cdn.jtvnw.net/user-default-pictures-uv/75305d54-c7cc-40d1-bb9c-91fbe85943c7-profile_image-300x300.png",
+                          "externalProfileLink": null,
+                          "followerCount": 0,
+                          "id": "5f108c57399c8300013dad42",
+                          "login": "vlasnikita",
+                          "streamer": false,
+                          "viewerCount": 0,
+                          "walletAmount": 0,
+                        }
+                      }
+                    >
+                      <div
+                        className="Sidebar"
+                      >
+                        <div
+                          className="Sidebar__menu"
+                        >
+                          <NavLink
+                            activeClassName="Sidebar__item_active"
+                            aria-current="page"
+                            className="Sidebar__item Sidebar__item_withMenu"
+                            eventContext="MY_PAGE"
+                            exact={true}
+                            id="Sidebar__item_mypage"
+                            isActive={[Function]}
+                            onClick={[Function]}
+                            to="/vlasnikita"
+                          >
+                            <Route
+                              exact={true}
+                              path="\\\\/vlasnikita"
+                            >
+                              <Link
+                                aria-current={null}
+                                className="Sidebar__item Sidebar__item_withMenu"
+                                eventContext="MY_PAGE"
+                                id="Sidebar__item_mypage"
+                                onClick={[Function]}
+                                replace={false}
+                                to="/vlasnikita"
+                              >
+                                <a
+                                  aria-current={null}
+                                  className="Sidebar__item Sidebar__item_withMenu"
+                                  eventContext="MY_PAGE"
+                                  href="/vlasnikita"
+                                  id="Sidebar__item_mypage"
+                                  onClick={[Function]}
+                                >
+                                  <span
+                                    className="Sidebar__iconContainer"
+                                  >
+                                    <img
+                                      alt="Моя страница"
+                                      className="Sidebar__icon"
+                                      height={20}
+                                      src="sidebar-home.svg"
+                                    />
+                                  </span>
+                                  <p
+                                    className="Sidebar__text"
+                                  >
+                                    Моя страница
+                                  </p>
+                                </a>
+                              </Link>
+                            </Route>
+                          </NavLink>
+                          <NavLink
+                            activeClassName="Sidebar__item_active"
+                            aria-current="page"
+                            className="Sidebar__item"
+                            eventContext="CHALLENGES"
+                            id="Sidebar__item_challenges"
+                            isActive={[Function]}
+                            onClick={[Function]}
+                            to="/challenges"
+                          >
+                            <Route
+                              path="\\\\/challenges"
+                            >
+                              <Link
+                                aria-current={null}
+                                className="Sidebar__item"
+                                eventContext="CHALLENGES"
+                                id="Sidebar__item_challenges"
+                                onClick={[Function]}
+                                replace={false}
+                                to="/challenges"
+                              >
+                                <a
+                                  aria-current={null}
+                                  className="Sidebar__item"
+                                  eventContext="CHALLENGES"
+                                  href="/challenges"
+                                  id="Sidebar__item_challenges"
+                                  onClick={[Function]}
+                                >
+                                  <span
+                                    className="Sidebar__iconContainer"
+                                  >
+                                    <img
+                                      alt="Челленджи"
+                                      className="Sidebar__icon"
+                                      height={20}
+                                      src="sidebar-challenges.svg"
+                                    />
+                                  </span>
+                                  <p
+                                    className="Sidebar__text"
+                                  >
+                                    Челленджи
+                                  </p>
+                                </a>
+                              </Link>
+                            </Route>
+                          </NavLink>
+                          <NavLink
+                            activeClassName="Sidebar__item_active"
+                            aria-current="page"
+                            className="Sidebar__item"
+                            eventContext="STREAMERS"
+                            id="Sidebar__item_streamers"
+                            isActive={[Function]}
+                            onClick={[Function]}
+                            to="/streamers"
+                          >
+                            <Route
+                              path="\\\\/streamers"
+                            >
+                              <Link
+                                aria-current={null}
+                                className="Sidebar__item"
+                                eventContext="STREAMERS"
+                                id="Sidebar__item_streamers"
+                                onClick={[Function]}
+                                replace={false}
+                                to="/streamers"
+                              >
+                                <a
+                                  aria-current={null}
+                                  className="Sidebar__item"
+                                  eventContext="STREAMERS"
+                                  href="/streamers"
+                                  id="Sidebar__item_streamers"
+                                  onClick={[Function]}
+                                >
+                                  <span
+                                    className="Sidebar__iconContainer"
+                                  >
+                                    <img
+                                      alt="Стримеры"
+                                      className="Sidebar__icon"
+                                      height={22}
+                                      src="sidebar-streamers.svg"
+                                    />
+                                  </span>
+                                  <p
+                                    className="Sidebar__text"
+                                  >
+                                    Стримеры
+                                  </p>
+                                </a>
+                              </Link>
+                            </Route>
+                          </NavLink>
+                          <NavLink
+                            activeClassName="Sidebar__item_active"
+                            aria-current="page"
+                            className="Sidebar__item"
+                            eventContext="WIDGETS"
+                            id="Sidebar__item_widgets"
+                            isActive={[Function]}
+                            onClick={[Function]}
+                            to="/vlasnikita/widgets"
+                          >
+                            <Route
+                              path="\\\\/vlasnikita\\\\/widgets"
+                            >
+                              <Link
+                                aria-current={null}
+                                className="Sidebar__item"
+                                eventContext="WIDGETS"
+                                id="Sidebar__item_widgets"
+                                onClick={[Function]}
+                                replace={false}
+                                to="/vlasnikita/widgets"
+                              >
+                                <a
+                                  aria-current={null}
+                                  className="Sidebar__item"
+                                  eventContext="WIDGETS"
+                                  href="/vlasnikita/widgets"
+                                  id="Sidebar__item_widgets"
+                                  onClick={[Function]}
+                                >
+                                  <span
+                                    className="Sidebar__iconContainer"
+                                  >
+                                    <img
+                                      alt="Виджеты"
+                                      className="Sidebar__icon"
+                                      height={16}
+                                      src="sidebar-widgets.svg"
+                                    />
+                                  </span>
+                                  <p
+                                    className="Sidebar__text"
+                                  >
+                                    Виджеты
+                                  </p>
+                                </a>
+                              </Link>
+                            </Route>
+                          </NavLink>
+                          <NavLink
+                            activeClassName="Sidebar__item_active"
+                            aria-current="page"
+                            className="Sidebar__item"
+                            eventContext="HOWITWORKS"
+                            id="Sidebar__item_howitworks"
+                            isActive={[Function]}
+                            onClick={[Function]}
+                            to="/how-it-works"
+                          >
+                            <Route
+                              path="\\\\/how-it-works"
+                            >
+                              <Link
+                                aria-current="page"
+                                className="Sidebar__item Sidebar__item_active"
+                                eventContext="HOWITWORKS"
+                                id="Sidebar__item_howitworks"
+                                onClick={[Function]}
+                                replace={false}
+                                style={Object {}}
+                                to="/how-it-works"
+                              >
+                                <a
+                                  aria-current="page"
+                                  className="Sidebar__item Sidebar__item_active"
+                                  eventContext="HOWITWORKS"
+                                  href="/how-it-works"
+                                  id="Sidebar__item_howitworks"
+                                  onClick={[Function]}
+                                  style={Object {}}
+                                >
+                                  <span
+                                    className="Sidebar__iconContainer"
+                                  >
+                                    <img
+                                      alt="Как это работает"
+                                      className="Sidebar__icon"
+                                      height={20}
+                                      src="sidebar-howitworks.svg"
+                                    />
+                                  </span>
+                                  <p
+                                    className="Sidebar__text"
+                                  >
+                                    О сервисе
+                                  </p>
+                                </a>
+                              </Link>
+                            </Route>
+                          </NavLink>
+                          <NavLink
+                            activeClassName="Sidebar__item_active"
+                            aria-current="page"
+                            className="Sidebar__item"
+                            eventContext="HELP"
+                            id="Sidebar__item_help"
+                            isActive={[Function]}
+                            onClick={[Function]}
+                            to="/help"
+                          >
+                            <Route
+                              path="\\\\/help"
+                            >
+                              <Link
+                                aria-current={null}
+                                className="Sidebar__item"
+                                eventContext="HELP"
+                                id="Sidebar__item_help"
+                                onClick={[Function]}
+                                replace={false}
+                                to="/help"
+                              >
+                                <a
+                                  aria-current={null}
+                                  className="Sidebar__item"
+                                  eventContext="HELP"
+                                  href="/help"
+                                  id="Sidebar__item_help"
+                                  onClick={[Function]}
+                                >
+                                  <span
+                                    className="Sidebar__iconContainer"
+                                  >
+                                    <img
+                                      alt="Помощь"
+                                      className="Sidebar__icon"
+                                      height={20}
+                                      src="sidebar-help.svg"
+                                    />
+                                  </span>
+                                  <p
+                                    className="Sidebar__text"
+                                  >
+                                    Помощь
+                                  </p>
+                                </a>
+                              </Link>
+                            </Route>
+                          </NavLink>
+                          <NavLink
+                            activeClassName="Sidebar__item_active"
+                            aria-current="page"
+                            className="Sidebar__item"
+                            eventContext="ABOUT"
+                            id="Sidebar__item_about"
+                            isActive={[Function]}
+                            onClick={[Function]}
+                            to="/about"
+                          >
+                            <Route
+                              path="\\\\/about"
+                            >
+                              <Link
+                                aria-current={null}
+                                className="Sidebar__item"
+                                eventContext="ABOUT"
+                                id="Sidebar__item_about"
+                                onClick={[Function]}
+                                replace={false}
+                                to="/about"
+                              >
+                                <a
+                                  aria-current={null}
+                                  className="Sidebar__item"
+                                  eventContext="ABOUT"
+                                  href="/about"
+                                  id="Sidebar__item_about"
+                                  onClick={[Function]}
+                                >
+                                  <span
+                                    className="Sidebar__iconContainer"
+                                  >
+                                    <img
+                                      alt="Документы"
+                                      className="Sidebar__icon"
+                                      height={20}
+                                      src="sidebar-about.svg"
+                                    />
+                                  </span>
+                                  <p
+                                    className="Sidebar__text"
+                                  >
+                                    Документы
+                                  </p>
+                                </a>
+                              </Link>
+                            </Route>
+                          </NavLink>
+                        </div>
+                        <div
+                          className="Sidebar__footer"
+                        >
+                          <a
+                            href="mailto:help@satoorn.ru"
+                          >
+                            <img
+                              alt="Моя страница"
+                              className="Sidebar__icon"
+                              height={20}
+                              src="sidebar-email.svg"
+                            />
+                          </a>
+                        </div>
+                      </div>
+                    </Sidebar>
+                  </Connect(Sidebar)>
+                </Route>
+              </withRouter(Connect(Sidebar))>
+            </Header>
+          </Connect(Header)>
+        </Route>
+      </withRouter(Connect(Header))>
+    </Provider>
+  </Router>
+</BrowserRouter>
+`;

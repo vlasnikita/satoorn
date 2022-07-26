@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render correctly bell with read notifications 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <Connect(Character)>
+    <Character
+      activeStreamer={
+        Object {
+          "authenticationSource": "twitch",
+          "bio": null,
+          "challengeCount": 0,
+          "contacts": Array [],
+          "email": null,
+          "externalId": "204865822",
+          "externalPhotoLink": "https://static-cdn.jtvnw.net/user-default-pictures-uv/75305d54-c7cc-40d1-bb9c-91fbe85943c7-profile_image-300x300.png",
+          "externalProfileLink": null,
+          "followerCount": 0,
+          "id": "5f108c57399c8300013dad42",
+          "login": "vlasnikita",
+          "streamer": false,
+          "viewerCount": 0,
+          "walletAmount": 0,
+        }
+      }
+      handleGetMinPayment={[Function]}
+      handleGetNotifications={[Function]}
+      handleGetProfile={[Function]}
+      handleGetSettings={[Function]}
+      handleOpenPopup={[Function]}
+      isProfileLoaded={true}
+      notifications={
+        Array [
+          Object {
+            "date": "2020-12-20",
+            "id": "string1",
+            "read": true,
+            "text": "string",
+          },
+          Object {
+            "date": "2020-11-20",
+            "id": "string2",
+            "read": true,
+            "text": "string",
+          },
+        ]
+      }
+      profile={
+        Object {
+          "authenticationSource": "twitch",
+          "bio": null,
+          "challengeCount": 0,
+          "contacts": Array [],
+          "email": null,
+          "externalId": "204865822",
+          "externalPhotoLink": "https://static-cdn.jtvnw.net/user-default-pictures-uv/75305d54-c7cc-40d1-bb9c-91fbe85943c7-profile_image-300x300.png",
+          "externalProfileLink": null,
+          "followerCount": 0,
+          "id": "5f108c57399c8300013dad42",
+          "login": "vlasnikita",
+          "streamer": false,
+          "viewerCount": 0,
+          "walletAmount": 0,
+        }
+      }
+      settingsLoaded={true}
+      settingsLoading={false}
+    >
+      <div
+        className="Character"
+      >
+        <div
+          className="Character__bell 
+                false 
+                false"
+          onClick={[Function]}
+        >
+          <img
+            alt="Уведомления"
+            className="Character__bellImage"
+            height={18}
+            src="bell.svg"
+          />
+        </div>
+        <div
+          className="Character__avatarContainer "
+        >
+          <img
+            alt="vlasnikita"
+            className="Character__avatar"
+            onClick={[Function]}
+            src="https://static-cdn.jtvnw.net/user-default-pictures-uv/75305d54-c7cc-40d1-bb9c-91fbe85943c7-profile_image-300x300.png"
+          />
+          <div
+            className="Character__dropdown"
+          >
+            <div
+              className="Character__dropdownLoginContainer"
+            >
+              <p
+                className="Character__dropdownLogin"
+              >
+                vlasnikita
+              </p>
+            </div>
+            <div
+              className="Character__dropdownList"
+            >
+              <a
+                className="Character__dropdownItem"
+                href="/api/logout"
+              >
+                выйти
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Character>
+  </Connect(Character)>
+</Provider>
+`;

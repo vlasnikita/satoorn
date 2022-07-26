@@ -1,0 +1,24 @@
+@media only screen and (max-width: 800px) {
+    .Streamer{
+        width: 380px;
+        padding: 10px 20px;
+        height: 70px;
+        min-height: 70px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .Streamer{
+        width: 270px;
+        padding: 6px 12px;
+
+        .UserInfo{
+            padding-left: 0;
+            width: 100%;
+        }
+
+        .Button_wide{
+            width: 90px;
+        }
+    }
+}

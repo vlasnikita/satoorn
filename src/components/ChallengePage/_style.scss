@@ -1,0 +1,433 @@
+$donatorAvatarHeightAndWidth: 20px;
+
+@keyframes widthen {
+  from {
+    padding-right: 0;
+  }
+  to {
+    padding-right: 178px;
+  }
+}
+
+.ChallengePage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 500;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: row;
+
+  &__body {
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  &__copy {
+    cursor: pointer;
+    z-index: 100;
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 40px;
+    background: #e6e6f0;
+    border-radius: 4px;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-left: 30px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .25);
+    opacity: .35;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    img {
+      height: 20px;
+      width: 20px;
+    }
+  }
+
+  &__user {
+    padding: 0 20px;
+    width: calc(100% - 40px);
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100px;
+    background: #fff;
+    border-bottom: 1px solid #f4f4f4;
+  }
+
+  &__price {
+    width: 150px;
+    position: absolute;
+    left: 80px;
+    bottom: unset;
+    top: 30px;
+    transform: unset;
+    border-radius: 8px;
+    border: 4px solid #fff;
+
+    &Text {
+      font-size: 2.8rem;
+      line-height: 2.8rem;
+      border-radius: 0;
+    }
+  }
+
+  &__actions {
+    width: 200px;
+    margin-top: 0;
+  }
+
+  &__input {
+    font-size: 2.8rem;
+
+    &_accepted {
+      font-size: 2rem;
+      line-height: 50px;
+      border-radius: 8px;
+      background: rgba(23, 112, 23, .25);
+    }
+
+    &_rejected {
+      font-size: 2rem;
+      line-height: 50px;
+      border-radius: 8px;
+      background: rgba(156, 14, 14, 0.35);
+    }
+  }
+
+  &__button {
+    width: auto;
+    padding: 0;
+    color: #555;
+    margin-right: 0;
+    margin-left: 20px;
+    border: none;
+    position: relative;
+    box-shadow: none;
+    font-size: 1.3rem;
+    height: unset;
+    background: none;
+    flex-direction: row;
+    text-decoration: none;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 0;
+      background: #555;
+    }
+
+    &:hover {
+      &:after {
+        height: 1px;
+      }
+    }
+
+    span{
+      line-height: 12px;
+    }
+
+    &Emoji {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__venzel {
+    position: absolute;
+    z-index: 4;
+    top: 0px;
+    left: 30px;
+  }
+
+  &__info {
+    z-index: 3;
+    background: #fff;
+    padding: 20px;
+    margin-top: 110px;
+    height: auto;
+    left: 20px;
+    border-radius: 5px;
+    width: 800px;
+    box-shadow: 0 0 10px 1px hsla(0, 0%, 7%, .2);
+  }
+
+  &__label {
+    margin-left: 5px;
+    color: #AAA;
+    font-size: 1.8em;
+    white-space: nowrap;
+  }
+
+  &__author {
+
+    padding-top: 1%;
+    display: flex;
+
+    &Avatar {
+      height: 30px;
+      width: 30px;
+      min-width: 30px;
+      border-radius: 50%;
+    }
+
+    &Value {
+      display: flex;
+      margin-left: 5px;
+    }
+
+    &Name {
+      text-decoration: none;
+      margin-left: 5px;
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #222;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+
+    }
+  }
+
+  &__title {
+    color: #222;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .Challenge__input {
+    &Container{
+      width: 140px;
+    }
+
+    &Currency{
+      font-size: 2rem;
+    }
+  }
+
+  .Challenge__button{
+    height: 44px;
+    width: 130px;
+  }
+
+  .Challenge__meta{
+    position: relative;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    &:after{
+      display: none;
+    }
+
+    &Donaters{
+      display: flex;
+      flex-direction: row;
+      margin-left: 5px;
+    }
+
+    &Row{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    &Column{
+      width: 100%;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+
+      &_paddingTop{
+        margin-top: 5px;
+        margin-bottom: 2px;
+      }
+    }
+
+    &Label{
+      color: #AAA;
+      font-size: 1.4em;
+
+      &_solo{
+        width: auto;
+        margin-right: 5px;
+      }
+    }
+
+    &Text{
+      text-decoration: none;
+      color: #222;
+      font-weight: bold;
+      font-size: 1.8rem;
+      line-height: 20px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    &Avatar{
+      height: $donatorAvatarHeightAndWidth;
+      width: $donatorAvatarHeightAndWidth;
+      border-radius: 50%;
+      margin-left: 3px;
+    }
+
+    &Icon{
+      margin-left: 3px;
+      height: $donatorAvatarHeightAndWidth;
+      width: $donatorAvatarHeightAndWidth;
+    }
+
+  }
+
+  &__donators {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+
+    &Item {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 5px;
+    }
+
+    &Amount{
+      color: #000;
+      font-weight: normal;
+      font-size: 1.4rem;
+    }
+
+    &Avatar {
+      margin-left: 3px;
+      height: $donatorAvatarHeightAndWidth;
+      width: $donatorAvatarHeightAndWidth;
+      border-radius: 50%;
+    }
+
+    &Name {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #222;
+      text-decoration: none;
+    }
+  }
+
+  &__description {
+    color: #222;
+    font-size: 1.6rem;
+    padding-bottom: 20px;
+  }
+
+  .Challenge__actions {
+    width: 280px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    height: 44px;
+
+    &_accepted {
+      height: 48px;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 200px;
+      animation: widthen 1.5s ease-out;
+      animation-iteration-count: 1;
+      animation-delay: 1s;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  .Challenge__acceptedBlock {
+    position: absolute;
+    right: 0;
+    //noinspection CssOptimizeSimilarProperties,CssOverwrittenProperties
+    border-left: 2px solid #ddd;
+    height: calc(100% - 2px);
+    border-radius: 8px;
+    width: 200px;
+    background: #fff;
+    //noinspection CssOptimizeSimilarProperties,CssOverwrittenProperties
+    border: 1px solid #ddd;
+
+    &Title {
+      font-size: 1.9rem;
+      font-weight: 700;
+      color: #222;
+      width: 100%;
+      text-align: center;
+      height: 36px;
+      line-height: 36px;
+    }
+
+    &Description {
+      position: absolute;
+      bottom: 0;
+      height: 18px;
+      line-height: 18px;
+      width: 100%;
+      padding: 0;
+      text-align: center;
+      font-size: 1.1rem;
+      color: rgba(34, 34, 34, .35);
+    }
+  }
+
+  .Challenge__share {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+
+    &Icon {
+      border-radius: 6px;
+      margin-left: 6px;
+      margin-right: 0;
+      overflow: hidden;
+      width: 36px;
+      height: 36px;
+
+      img {
+        width: 36px;
+        height: 36px;
+      }
+    }
+  }
+
+  .Challenge__priceText {
+    border: none;
+  }
+
+  .User__body {
+    z-index: 4;
+  }
+
+}
+
+@import '/media';

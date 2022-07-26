@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="Popup"
+>
+  <div
+    className="Popup__body"
+  >
+    <button
+      className="Popup__close"
+      onClick={[Function]}
+    >
+      ✕
+    </button>
+  </div>
+</div>
+`;

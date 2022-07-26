@@ -1,0 +1,130 @@
+.TransactionsFeed{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: scroll;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+    padding-top: 30px;
+}
+
+.Transactions__button_back{
+    border-radius: 4px;
+    padding: 8px 15px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    background: #fee234;
+    height: 20px;
+    cursor: pointer;
+    box-shadow: 0 3px 0 1px #222;
+    text-decoration: none;
+    color: #666;
+    min-width: 70px;
+    text-align: center;
+    border: 2px solid #333;
+    background: none;
+    position: absolute;
+    top: 40px;
+    left: 60px;
+    width: auto;
+}
+
+.Transaction{
+    width: 460px;
+    max-width: calc(100% - 80px);
+    height: 120px;
+    background: #fff;
+    color: #222;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 1px 10px 0px hsla(0,0%,7%,.1);
+
+    &__body{
+        margin-left: 20px;
+        padding: 10px 0;
+        width: calc(100% - 120px);
+        height: calc(100% - 20px);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    &__title{
+        font-weight: bold;
+        font-size: 1.6rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
+    }
+
+    &__info{
+        margin: auto 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__amount{
+        width: 100px;
+        height: 50px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        font-size: 2.2rem;
+        color: #222;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__crumbs{
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-left: 20px;
+
+    }
+
+    &__crumb{
+        color: #222;
+        font-weight: bold;
+        font-size: 1.2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+        &_large{
+            width: 100px;
+        }
+
+        &:last-child{
+            border-right: none;
+        }
+
+        &Label{
+            color: #aaa;
+            font-weight: normal;
+        }
+    }
+
+    &__status{
+        width: 60px;
+        height: 60px;
+        border-radius: 4px;
+        margin: 30px;
+    }
+}
+
+@import "/media";

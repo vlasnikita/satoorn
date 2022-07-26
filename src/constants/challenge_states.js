@@ -1,0 +1,6 @@
+export default {
+    CREATED: 'CREATED',
+    VIEWED: 'VIEWED',
+    ACCEPTED: 'ACCEPTED',
+    REJECTED: 'REJECTED'
+}

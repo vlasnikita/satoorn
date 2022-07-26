@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Widget correctly 1`] = `
+<Rnd
+  bounds=".Widgets__canvas"
+  className="Widgets__widgetContainer "
+  lockAspectRatio={true}
+  maxHeight={9007199254740991}
+  maxWidth={9007199254740991}
+  onDrag={[Function]}
+  onDragStart={[Function]}
+  onDragStop={[Function]}
+  onResize={[Function]}
+  onResizeStart={[Function]}
+  onResizeStop={[Function]}
+  position={
+    Object {
+      "x": 0,
+      "y": 0,
+    }
+  }
+  resizeHandleClasses={
+    Object {
+      "bottom": "Widgets__widgetResize",
+      "bottomLeft": "Widgets__widgetResize",
+      "bottomRight": "Widgets__widgetResize",
+      "left": "Widgets__widgetResize",
+      "right": "Widgets__widgetResize",
+      "top": "Widgets__widgetResize",
+      "topLeft": "Widgets__widgetResize",
+      "topRight": "Widgets__widgetResize",
+    }
+  }
+  scale={1}
+  size={
+    Object {
+      "height": 240,
+      "width": 400,
+    }
+  }
+>
+  <div
+    className="
+                    Widgets__widget 
+                    Widgets__widget_notifications"
+    style={
+      Object {
+        "height": 240,
+      }
+    }
+  >
+    <img
+      className="Widgets__widgetAnimation"
+      src="widgets-notification-satoorn.gif"
+      style={
+        Object {
+          "height": 160,
+        }
+      }
+    />
+    <p
+      className="Widgets__widgetMessage Widgets__widgetMessage_header"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "999₽ - кул_стори_боб!",
+        }
+      }
+      style={
+        Object {
+          "fontSize": 22.8,
+          "marginBottom": 4.8,
+        }
+      }
+    />
+    <p
+      className="Widgets__widgetMessage"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "Посмотреть за стрим все тиктоки на свете с закрытыми глазами - <span class=\\"Widgets__widgetMessage_link\\">satoorn.ru/some Login</span>",
+        }
+      }
+      style={
+        Object {
+          "fontSize": 12.4,
+        }
+      }
+    />
+  </div>
+  <button
+    className="Widgets__widgetDelete"
+    onClick={[Function]}
+  >
+    <img
+      alt=""
+      src="widgets-delete.svg"
+    />
+  </button>
+</Rnd>
+`;

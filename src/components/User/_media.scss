@@ -1,0 +1,158 @@
+@media only screen and (max-width: 1200px) {
+  .User__createTitle {
+    width: calc(100vw - 300px);
+  }
+}
+
+@media only screen
+and (max-width : 1100px){
+  .User{
+    &__header {
+      max-width: 700px;
+    }
+
+    &__button {
+      left: 60%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .User__createTitle {
+    font-size: 4.6rem;
+    top: 60px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+
+  .User__button {
+    transform: translateY(-50%);
+    right: 30px;
+    left: unset;
+    top: 50%;
+  }
+}
+
+@media only screen
+and (max-width : 800px){
+  .User{
+    &__header {
+      width: calc(100% - 60px);
+      left: 0px;
+    }
+
+    &__button{
+      position: relative;
+      top: unset;
+      left: unset;
+      right: unset;
+      transform: none;
+      margin: 0 auto;
+      padding: 0 10px;
+      height: 36px;
+      width: 160px;
+
+      &Icon svg {
+        height: 16px;
+        width: 22px;
+      }
+
+      &Text{
+        font-size: 1.4rem;
+      }
+    }
+
+    .FiltersBar__body{
+      margin-left: 30px;
+    }
+
+    &__createTitle {
+      width: 100%;
+      text-align: end;
+    }
+  }
+}
+
+@media only screen
+and (max-width : 700px){
+  .User{
+    &__header {
+      height: 100px;
+    }
+
+    &__body{
+      height: calc(100% - 100px);
+      padding-top: 160px;
+
+      &Blur{
+        height: 100px;
+      }
+    }
+
+    &__navbar{
+      &Wrapper{
+        height: 30px;
+      }
+
+      &Arrow{
+        &:after{
+          height: 30px;
+          top: -5px;
+        }
+      }
+      &Item{
+        line-height: 30px;
+        padding: 0 15px;
+        font-size: 1.1rem;
+      }
+    }
+
+    .FiltersBar {
+      top: 160px;
+    }
+
+    .OrdersFeed{
+      margin-top: 60px;
+      height: calc(100% - 120px);
+    }
+
+    &__createTitle{
+      white-space: nowrap;
+      height: 60px;
+      line-height: 60px;
+      text-shadow: 3px 3px #7109c2;
+      font-size: 3.2rem;
+      top: 50px;
+    }
+  }
+}
+
+@media only screen
+and (max-width : 674px){
+  .User {
+    .OrdersFeed {
+      height: calc(100% - 180px);
+    }
+  }
+}
+
+@media only screen
+and (max-width : 550px){
+  .User{
+    &__button{
+      padding: 0 5px;
+      height: 36px;
+      width: 120px;
+
+      &Icon svg {
+        height: 12px;
+        width: 18px;
+      }
+
+      &Text{
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
